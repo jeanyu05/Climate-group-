@@ -1,5 +1,6 @@
 
 import requests 
+import json
 
 OW_LatLong_Dict = {'Lansing':(42.7325,-84.5555),'Columbus':(39.9612,-82.9988),'Indianapolis':(39.7684,-86.1581),'Springfield':(39.7817,-89.6501),'Madison':(43.0748,-89.3840),
                   'Saint Paul':(44.9537,-93.0900),'Des Moines':(41.5868,-93.6250),'Jefferson City':(38.5767,-92.1735),'Frankfort':(38.2009,-84.8733),'Nashville':(36.1627,-86.7816),
@@ -7,11 +8,11 @@ OW_LatLong_Dict = {'Lansing':(42.7325,-84.5555),'Columbus':(39.9612,-82.9988),'I
                   'Albany':(42.6526,-73.7562),'Trenton':(40.2204,-74.7643),'Hartford':(41.7658,-72.6734),'Boston':(42.3601,-71.0589),'Providence':(41.8240,-71.4128),
                   'Montpelier':(44.2601,-72.5754),'Concord':(43.2081,-71.5376),'Augusta':(44.3106,-69.7795),'Pierre':(44.3683,-100.3509),'Bismarck':(46.8083,-100.7837)}
 
-def openweather_city_data():
-    
+def openweather_city_data(latlongtup):
+    all_cities = {}
     owAPIKey = 'bac9b356ed172f8814a3fcea57ab3e85'
 
-    for k, v in OW_LatLong_Dict.values():
+    for k, v in latlongtup.items():
         
         url = f"http://api.openweathermap.org/data/2.5/air_pollution/history"
         params = {'lat': v[0],
@@ -23,3 +24,12 @@ def openweather_city_data():
         response = requests.get(url, params=params)
         if response.status_code == 200:
             data = response.json()
+            all_cities[k] =  data
+
+    with open('Air_quality.json', 'w') as airpolfile:
+        json.dump(all_cities, airpolfile, indent=4)
+        
+             
+    
+             
+openweather_city_data(OW_LatLong_Dict)
