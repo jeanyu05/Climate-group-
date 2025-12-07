@@ -11,7 +11,9 @@ def eia_city_data(stateidlst):
 
     for id in stateidlst:
     
-        url = f"https://api.eia.gov/v2/seds/consumption/data?api_key={'ill add api key soon'}&facets[stateid][]={id}" 
+        url = f"https://api.eia.gov/v2/seds/consumption/data" 
+        params = {'facets[stateid][]': id,
+                  'api_key': eia_APIKey}
     pass
 
 
