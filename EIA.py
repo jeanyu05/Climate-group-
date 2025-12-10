@@ -1,4 +1,5 @@
 import requests
+import json
 
 Stateid_list = ['MI','OH','IN','IL','WI','MN','IA','MO','KY','TN',
                 'PA','WV','VA','MD','DE','NY','NJ','CT','MA','RI',
@@ -7,6 +8,7 @@ Stateid_list = ['MI','OH','IN','IL','WI','MN','IA','MO','KY','TN',
 #im like 90% sure this is the right url for the eia api should return the state and their energy usage from 1960-2023
 #dont know if we need all that data though, couldnt find the history params to only get a certain amount
 def eia_city_data(stateidlst):
+    all_states = {}
     eia_APIKey = ''
 
     for id in stateidlst:
@@ -14,7 +16,13 @@ def eia_city_data(stateidlst):
         url = f"https://api.eia.gov/v2/seds/consumption/data" 
         params = {'facets[stateid][]': id,
                   'api_key': eia_APIKey}
-    pass
+        response = requests.get(url, params=params)
+        if response.status_code == 200:
+            data = response.json()
+            all_states[id] =  data
+
+    with open('EIA_data.json', 'w') as EIA_file:
+        json.dump(all_states, EIA_file, indent=4)
 
 
 #all data should be downloaded to a file and then the file should eb accessed by sqlite3 for uploading
