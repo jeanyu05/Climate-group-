@@ -43,6 +43,27 @@ def create_tables():
     conn.close()
     print("✓ Tables created successfully")
 
+def get_city_id(city_name, lat, lon):
+    conn = sqlite3.connect('climate_data.db')
+    cur = conn.cursor()
+    
+    try:
+        cur.execute('''
+            INSERT OR IGNORE INTO Cities (city_name, latitude, longitude)
+            VALUES (?, ?, ?)
+        ''', (city_name, lat, lon))
+        conn.commit()
+        
+        cur.execute('SELECT city_id FROM Cities WHERE city_name = ?', (city_name,))
+        city_id = cur.fetchone()[0]
+        conn.close()
+        return city_id
+    except Exception as e:
+        conn.close()
+        print(f"Error with city {city_name}: {e}")
+        return None
+
+
 def openweather_city_data(latlongtup):
     all_cities = {}
     owAPIKey = 'bac9b356ed172f8814a3fcea57ab3e85'
