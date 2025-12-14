@@ -7,6 +7,41 @@ OW_LatLong_Dict = {'Lansing':(42.7325,-84.5555),'Columbus':(39.9612,-82.9988),'I
                   'Harrisburg':(40.2732,-76.8867),'Charleston':(38.3498,-81.6326),'Richmond':(37.5407,-77.4360),'Annapolis':(38.9784,-76.4922),'Dover':(39.1582,-75.5244),
                   'Albany':(42.6526,-73.7562),'Trenton':(40.2204,-74.7643),'Hartford':(41.7658,-72.6734),'Boston':(42.3601,-71.0589),'Providence':(41.8240,-71.4128),
                   'Montpelier':(44.2601,-72.5754),'Concord':(43.2081,-71.5376),'Augusta':(44.3106,-69.7795),'Pierre':(44.3683,-100.3509),'Bismarck':(46.8083,-100.7837)}
+def create_tables():
+    conn = sqlite3.connect('climate_data.db')
+    cur = conn.cursor()
+    
+    cur.execute('''
+        CREATE TABLE IF NOT EXISTS Cities (
+            city_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            city_name TEXT UNIQUE NOT NULL,
+            latitude REAL NOT NULL,
+            longitude REAL NOT NULL
+        )
+    ''')
+    
+    cur.execute('''
+        CREATE TABLE IF NOT EXISTS AirQuality (
+            air_quality_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            city_id INTEGER NOT NULL,
+            dt INTEGER NOT NULL,
+            aqi INTEGER,
+            co REAL,
+            no REAL,
+            no2 REAL,
+            o3 REAL,
+            so2 REAL,
+            pm2_5 REAL,
+            pm10 REAL,
+            nh3 REAL,
+            FOREIGN KEY (city_id) REFERENCES Cities(city_id),
+            UNIQUE(city_id, dt)
+        )
+    ''')
+    
+    conn.commit()
+    conn.close()
+    print("✓ Tables created successfully")
 
 def openweather_city_data(latlongtup):
     all_cities = {}
