@@ -84,7 +84,34 @@ def openweather_city_data(latlongtup):
 
     with open('Air_quality.json', 'w') as airpolfile:
         json.dump(all_cities, airpolfile, indent=4)
+
+def get_next_batch_cities(batch_size=25):
+    conn = sqlite3.connect('climate_data.db')
+    cur = conn.cursor()
+    
+    cur.execute('''
+        SELECT city_name FROM Cities
+        WHERE city_id NOT IN (
+            SELECT DISTINCT city_id FROM AirQuality
+        )
+        LIMIT ?
+    ''', (batch_size,))
+    
+    cities_to_process = [row[0] for row in cur.fetchall()]
+    conn.close()
+    
+    if len(cities_to_process) < batch_size:
+        conn = sqlite3.connect('climate_data.db')
+        cur = conn.cursor()
+        cur.execute('SELECT city_name FROM Cities')
+        existing = {row[0] for row in cur.fetchall()}
+        conn.close()
         
+        available = [city for city in OW_LatLong_Dict.keys() if city not in existing]
+        remaining = batch_size - len(cities_to_process)
+        cities_to_process.extend(available[:remaining])
+    
+    return cities_to_process[:batch_size]
              
     
              
