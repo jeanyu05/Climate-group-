@@ -135,7 +135,99 @@ def openweather_city_data(latlongtup):
         json.dump(all_cities, airpolfile, indent=4)
     
     return all_cities
-             
+
+
+def store_air_quality_to_db(cities_to_process):
+    conn = sqlite3.connect('climate_data.db')
+    cur = conn.cursor()
     
-             
-openweather_city_data(OW_LatLong_Dict)
+    items_stored = 0
+    
+    cities_dict = {city: OW_LatLong_Dict[city] for city in cities_to_process if city in OW_LatLong_Dict}
+    
+    all_cities = openweather_city_data(cities_dict)
+    
+    for city_name, city_data in all_cities.items():
+        if city_name not in OW_LatLong_Dict:
+            continue
+            
+        lat, lon = OW_LatLong_Dict[city_name]
+        city_id = get_city_id(city_name, lat, lon)
+        
+        if not city_id:
+            continue
+        
+        if 'list' in city_data:
+            for reading in city_data['list']:
+                dt = reading.get('dt')
+                aqi = reading.get('main', {}).get('aqi')
+                components = reading.get('components', {})
+                
+                try:
+                    cur.execute('''
+                        INSERT OR IGNORE INTO AirQuality 
+                        (city_id, dt, aqi, co, no, no2, o3, so2, pm2_5, pm10, nh3)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ''', (
+                        city_id, dt, aqi,
+                        components.get('co'),
+                        components.get('no'),
+                        components.get('no2'),
+                        components.get('o3'),
+                        components.get('so2'),
+                        components.get('pm2_5'),
+                        components.get('pm10'),
+                        components.get('nh3')
+                    ))
+                    items_stored += 1
+                except Exception as e:
+                    print(f"Error storing reading for {city_name}: {e}")
+            
+            print(f"✓ Stored air quality data for {city_name}")
+    
+    conn.commit()
+    conn.close()
+    return items_stored
+def main():
+    print("=" * 60)
+    print("OpenWeather Air Quality Data Collection")
+    print("=" * 60)
+    
+    create_tables()
+    
+    cities = get_next_batch_cities(batch_size=25)
+    
+    if not cities:
+        print("\n✓ All cities have been processed!")
+        print("Run this script again to add more data if needed.")
+        return
+    
+    print(f"\nProcessing {len(cities)} cities in this batch:")
+    for city in cities:
+        print(f"  - {city}")
+    
+    print(f"\nFetching air quality data from OpenWeather API...")
+    items_stored = store_air_quality_to_db(cities)
+    
+    print(f"\n" + "=" * 60)
+    print(f"✓ Successfully stored {items_stored} air quality readings")
+    print("=" * 60)
+    
+    conn = sqlite3.connect('climate_data.db')
+    cur = conn.cursor()
+    cur.execute('SELECT COUNT(*) FROM Cities')
+    city_count = cur.fetchone()[0]
+    cur.execute('SELECT COUNT(*) FROM AirQuality')
+    aq_count = cur.fetchone()[0]
+    conn.close()
+    
+    print(f"\nCurrent Database Stats:")
+    print(f"  Cities: {city_count}")
+    print(f"  Air Quality Readings: {aq_count}")
+
+if __name__ == "__main__":
+    main()
+    
+    openweather_city_data(OW_LatLong_Dict)            
+    
+        
