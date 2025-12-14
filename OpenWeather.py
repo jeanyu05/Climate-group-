@@ -112,6 +112,29 @@ def get_next_batch_cities(batch_size=25):
         cities_to_process.extend(available[:remaining])
     
     return cities_to_process[:batch_size]
+
+def openweather_city_data(latlongtup):
+    all_cities = {}
+    owAPIKey = 'bac9b356ed172f8814a3fcea57ab3e85'
+
+    for k, v in latlongtup.items():
+        
+        url = f"http://api.openweathermap.org/data/2.5/air_pollution/history"
+        params = {'lat': v[0],
+                  'lon': v[1],
+                  'start': 1764633600,
+                  'end': 1764979200,
+                  'appid': owAPIKey}
+        
+        response = requests.get(url, params=params)
+        if response.status_code == 200:
+            data = response.json()
+            all_cities[k] = data
+
+    with open('Air_quality.json', 'w') as airpolfile:
+        json.dump(all_cities, airpolfile, indent=4)
+    
+    return all_cities
              
     
              
