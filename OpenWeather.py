@@ -1,4 +1,3 @@
-import sqlite3
 import json
 import requests
 
@@ -39,3 +38,5 @@ def openweather_city_data(latlongtup):
 
     with open('Air_quality.json', 'w') as airpolfile:
         json.dump(all_cities, airpolfile, indent=4)
+
+openweather_city_data(OW_LatLong_Dict)

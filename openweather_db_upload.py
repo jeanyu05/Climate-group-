@@ -2,15 +2,10 @@ import json
 import datetime
 import sqlite3
 import numpy as np
-
-
-def load_json_data(filename):
-    with open(filename, 'r') as ofile:
-        data = json.load(ofile)
-        return data
     
 def update_air_quality_date(filename):
-    data = load_json_data(filename)
+    with open(filename, 'r') as ofile:
+        data = json.load(ofile)
 
     for k,v in data.items():
         for AQDict in v['list']:
@@ -58,7 +53,7 @@ def combine_air_quality_data(data):
 
     return new_aq
 
-def setup_aq_database(dbname):
+def setup_climate_database(dbname):
     conn = sqlite3.connect(dbname)
     cur = conn.cursor()
     return cur, conn
@@ -139,7 +134,7 @@ def setup_air_quality_data(cur, conn, data):
 def main():
     data = update_air_quality_date("Air_quality.json")
     agg_aq_data = combine_air_quality_data(data)
-    cur, conn = setup_aq_database('climate_data.db')
+    cur, conn = setup_climate_database('climate_data.db')
     setup_city_table(cur, conn, agg_aq_data)
     setup_air_quality_data(cur, conn, agg_aq_data)
 
