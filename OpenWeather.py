@@ -1,12 +1,23 @@
-
-import requests 
+import sqlite3
 import json
+import requests
 
-OW_LatLong_Dict = {'Lansing':(42.7325,-84.5555),'Columbus':(39.9612,-82.9988),'Indianapolis':(39.7684,-86.1581),'Springfield':(39.7817,-89.6501),'Madison':(43.0748,-89.3840),
-                  'Saint Paul':(44.9537,-93.0900),'Des Moines':(41.5868,-93.6250),'Jefferson City':(38.5767,-92.1735),'Frankfort':(38.2009,-84.8733),'Nashville':(36.1627,-86.7816),
-                  'Harrisburg':(40.2732,-76.8867),'Charleston':(38.3498,-81.6326),'Richmond':(37.5407,-77.4360),'Annapolis':(38.9784,-76.4922),'Dover':(39.1582,-75.5244),
-                  'Albany':(42.6526,-73.7562),'Trenton':(40.2204,-74.7643),'Hartford':(41.7658,-72.6734),'Boston':(42.3601,-71.0589),'Providence':(41.8240,-71.4128),
-                  'Montpelier':(44.2601,-72.5754),'Concord':(43.2081,-71.5376),'Augusta':(44.3106,-69.7795),'Pierre':(44.3683,-100.3509),'Bismarck':(46.8083,-100.7837)}
+OW_LatLong_Dict = {
+    'Lansing': (42.7325, -84.5555), 'Columbus': (39.9612, -82.9988),
+    'Indianapolis': (39.7684, -86.1581), 'Springfield': (39.7817, -89.6501),
+    'Madison': (43.0748, -89.3840), 'Saint Paul': (44.9537, -93.0900),
+    'Des Moines': (41.5868, -93.6250), 'Jefferson City': (38.5767, -92.1735),
+    'Frankfort': (38.2009, -84.8733), 'Nashville': (36.1627, -86.7816),
+    'Harrisburg': (40.2732, -76.8867), 'Charleston': (38.3498, -81.6326),
+    'Richmond': (37.5407, -77.4360), 'Annapolis': (38.9784, -76.4922),
+    'Dover': (39.1582, -75.5244), 'Albany': (42.6526, -73.7562),
+    'Trenton': (40.2204, -74.7643), 'Hartford': (41.7658, -72.6734),
+    'Boston': (42.3601, -71.0589), 'Providence': (41.8240, -71.4128),
+    'Montpelier': (44.2601, -72.5754), 'Concord': (43.2081, -71.5376),
+    'Augusta': (44.3106, -69.7795), 'Pierre': (44.3683, -100.3509),
+    'Bismarck': (46.8083, -100.7837)
+}
+
 def create_tables():
     conn = sqlite3.connect('climate_data.db')
     cur = conn.cursor()
@@ -63,28 +74,6 @@ def get_city_id(city_name, lat, lon):
         print(f"Error with city {city_name}: {e}")
         return None
 
-
-def openweather_city_data(latlongtup):
-    all_cities = {}
-    owAPIKey = 'bac9b356ed172f8814a3fcea57ab3e85'
-
-    for k, v in latlongtup.items():
-        
-        url = f"http://api.openweathermap.org/data/2.5/air_pollution/history"
-        params = {'lat': v[0],
-                  'lon': v[1],
-                  'start': 1764633600,
-                  'end': 1764979200,
-                  'appid': owAPIKey}
-        
-        response = requests.get(url, params=params)
-        if response.status_code == 200:
-            data = response.json()
-            all_cities[k] =  data
-
-    with open('Air_quality.json', 'w') as airpolfile:
-        json.dump(all_cities, airpolfile, indent=4)
-
 def get_next_batch_cities(batch_size=25):
     conn = sqlite3.connect('climate_data.db')
     cur = conn.cursor()
@@ -114,6 +103,9 @@ def get_next_batch_cities(batch_size=25):
     return cities_to_process[:batch_size]
 
 def openweather_city_data(latlongtup):
+    import numpy as np
+    from datetime import datetime
+    
     all_cities = {}
     owAPIKey = 'bac9b356ed172f8814a3fcea57ab3e85'
 
@@ -129,13 +121,50 @@ def openweather_city_data(latlongtup):
         response = requests.get(url, params=params)
         if response.status_code == 200:
             data = response.json()
-            all_cities[k] = data
+            
+            daily_averages = {}
+            
+            for reading in data.get('list', []):
+                dt = reading.get('dt')
+                date = datetime.fromtimestamp(dt).strftime('%Y-%m-%d')
+                
+                if date not in daily_averages:
+                    daily_averages[date] = {
+                        'aqi': [], 'co': [], 'no': [], 'no2': [],
+                        'o3': [], 'so2': [], 'pm2_5': [], 'pm10': [], 'nh3': []
+                    }
+                
+                daily_averages[date]['aqi'].append(reading.get('main', {}).get('aqi'))
+                components = reading.get('components', {})
+                daily_averages[date]['co'].append(components.get('co'))
+                daily_averages[date]['no'].append(components.get('no'))
+                daily_averages[date]['no2'].append(components.get('no2'))
+                daily_averages[date]['o3'].append(components.get('o3'))
+                daily_averages[date]['so2'].append(components.get('so2'))
+                daily_averages[date]['pm2_5'].append(components.get('pm2_5'))
+                daily_averages[date]['pm10'].append(components.get('pm10'))
+                daily_averages[date]['nh3'].append(components.get('nh3'))
+            
+            city_averages = {}
+            for date, values in daily_averages.items():
+                city_averages[date] = {
+                    'aqi': round(np.mean([x for x in values['aqi'] if x is not None]), 2),
+                    'co': round(np.mean([x for x in values['co'] if x is not None]), 2),
+                    'no': round(np.mean([x for x in values['no'] if x is not None]), 2),
+                    'no2': round(np.mean([x for x in values['no2'] if x is not None]), 2),
+                    'o3': round(np.mean([x for x in values['o3'] if x is not None]), 2),
+                    'so2': round(np.mean([x for x in values['so2'] if x is not None]), 2),
+                    'pm2_5': round(np.mean([x for x in values['pm2_5'] if x is not None]), 2),
+                    'pm10': round(np.mean([x for x in values['pm10'] if x is not None]), 2),
+                    'nh3': round(np.mean([x for x in values['nh3'] if x is not None]), 2)
+                }
+            
+            all_cities[k] = city_averages
 
     with open('Air_quality.json', 'w') as airpolfile:
         json.dump(all_cities, airpolfile, indent=4)
     
     return all_cities
-
 
 def store_air_quality_to_db(cities_to_process):
     conn = sqlite3.connect('climate_data.db')
@@ -188,6 +217,7 @@ def store_air_quality_to_db(cities_to_process):
     conn.commit()
     conn.close()
     return items_stored
+
 def main():
     print("=" * 60)
     print("OpenWeather Air Quality Data Collection")
@@ -228,6 +258,4 @@ def main():
 if __name__ == "__main__":
     main()
     
-    openweather_city_data(OW_LatLong_Dict)            
-    
-        
+    openweather_city_data(OW_LatLong_Dict)
