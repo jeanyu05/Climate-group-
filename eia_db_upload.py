@@ -49,7 +49,8 @@ def setup_state_energy_data(cur, conn, data):
         state_energy_id INTEGER PRIMARY KEY AUTOINCREMENT,
         state_id INTEGER NOT NULL,
         year_id INTEGER NOT NULL,
-        energy_value INTEGER  
+        energy_value INTEGER,
+        UNIQUE(state_id, year_id)  
         )
 
 ''')
@@ -81,7 +82,7 @@ def setup_state_energy_data(cur, conn, data):
             if cur.rowcount == 1:
                 count += 1
 
-        conn.commit()
+    conn.commit()
 
 
 def main():

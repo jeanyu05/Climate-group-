@@ -4,6 +4,9 @@ import sqlite3
 import numpy as np
     
 def update_air_quality_date(filename):
+    
+    with open(filename, 'r') as ofile:
+        data = json.load(ofile)
 
     for k,v in data.items():
         for AQDict in v['list']:

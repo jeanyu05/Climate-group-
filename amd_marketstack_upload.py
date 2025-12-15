@@ -22,7 +22,8 @@ def setup_amd_market_data(cur, conn, data):
         adj_low REAL,
         adj_close REAL,
         adj_volume REAL, 
-        date TEXT
+        date TEXT,
+        UNIQUE(date)
         )
                 
 ''')
