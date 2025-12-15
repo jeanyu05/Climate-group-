@@ -74,12 +74,27 @@ def setup_city_table(cur, conn, data):
 
     conn.commit()
 
+def setup_date_tables(cur, conn, data):
+    cur.execute('''
+        CREATE TABLE IF NOT EXISTS Dates (
+                date_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                date TEXT UNIQUE NOT NULL
+        )
+    ''')
+
+    for v in data.values():
+        cur.execute(
+            "INSERT OR IGNORE INTO Dates (date) VALUES (?)", (v['date'][0][:10],)
+        )
+
+    conn.commit()
+
 def setup_air_quality_data(cur, conn, data):
     cur.execute('''
         CREATE TABLE IF NOT EXISTS AirQuality (
             air_quality_id INTEGER PRIMARY KEY AUTOINCREMENT,
             city_id INTEGER NOT NULL,
-            date TEXT,
+            date_id INTEGER NOT NULL,
             aqi INTEGER,
             co REAL,
             no REAL,
@@ -90,7 +105,7 @@ def setup_air_quality_data(cur, conn, data):
             pm10 REAL,
             nh3 REAL,
             FOREIGN KEY (city_id) REFERENCES Cities(city_id),
-            UNIQUE(city_id, date)
+            UNIQUE(city_id, date_id)
             )
     ''')
 
@@ -102,18 +117,19 @@ def setup_air_quality_data(cur, conn, data):
             break
 
         city_name = k[:-3].strip()
-        city_date = v['date'][0][:10]
-
 
         cur.execute('SELECT city_id FROM Cities where city_name =?', (city_name,))
         city_name_id = cur.fetchone()[0]
 
+        cur.execute('SELECT date_id FROM Dates where date =?', (v['date'][0][:10],))
+        date_id = cur.fetchone()[0]
+
         cur.execute('''INSERT OR IGNORE INTO AirQuality
-                    (city_id, date, aqi, co, no, no2, o3, so2, pm2_5, pm10, nh3)
+                    (city_id, date_id, aqi, co, no, no2, o3, so2, pm2_5, pm10, nh3)
                     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''',
                     (
                     city_name_id,
-                    city_date,
+                    date_id,
                     np.average(np.array(v['aqi'])),
                     np.average(np.array(v['co'])),
                     np.average(np.array(v['no'])),
@@ -136,6 +152,7 @@ def main():
     agg_aq_data = combine_air_quality_data(data)
     cur, conn = setup_climate_database('climate_data.db')
     setup_city_table(cur, conn, agg_aq_data)
+    setup_date_tables(cur,conn, agg_aq_data)
     setup_air_quality_data(cur, conn, agg_aq_data)
 
 main()
