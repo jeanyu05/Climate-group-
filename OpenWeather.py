@@ -74,7 +74,7 @@ def get_city_id(city_name, lat, lon):
         print(f"Error with city {city_name}: {e}")
         return None
 
-def get_next_batch_cities(batch_size=25):
+def get_next_batch_cities(batch_size=1):
     conn = sqlite3.connect('climate_data.db')
     cur = conn.cursor()
     
@@ -106,7 +106,8 @@ def openweather_city_data(latlongtup):
     import numpy as np
     from datetime import datetime
     
-    all_cities = {}
+    all_cities_raw = {}
+    all_cities_averaged = {}
     owAPIKey = 'bac9b356ed172f8814a3fcea57ab3e85'
 
     for k, v in latlongtup.items():
@@ -121,6 +122,7 @@ def openweather_city_data(latlongtup):
         response = requests.get(url, params=params)
         if response.status_code == 200:
             data = response.json()
+            all_cities_raw[k] = data
             
             daily_averages = {}
             
@@ -159,12 +161,12 @@ def openweather_city_data(latlongtup):
                     'nh3': round(np.mean([x for x in values['nh3'] if x is not None]), 2)
                 }
             
-            all_cities[k] = city_averages
+            all_cities_averaged[k] = city_averages
 
     with open('Air_quality.json', 'w') as airpolfile:
-        json.dump(all_cities, airpolfile, indent=4)
+        json.dump(all_cities_averaged, airpolfile, indent=4)
     
-    return all_cities
+    return all_cities_raw
 
 def store_air_quality_to_db(cities_to_process):
     conn = sqlite3.connect('climate_data.db')
@@ -187,7 +189,11 @@ def store_air_quality_to_db(cities_to_process):
             continue
         
         if 'list' in city_data:
+            readings_for_city = 0
             for reading in city_data['list']:
+                if readings_for_city >= 25:
+                    break
+                    
                 dt = reading.get('dt')
                 aqi = reading.get('main', {}).get('aqi')
                 components = reading.get('components', {})
@@ -209,10 +215,11 @@ def store_air_quality_to_db(cities_to_process):
                         components.get('nh3')
                     ))
                     items_stored += 1
+                    readings_for_city += 1
                 except Exception as e:
                     print(f"Error storing reading for {city_name}: {e}")
             
-            print(f"✓ Stored air quality data for {city_name}")
+            print(f"✓ Stored {readings_for_city} readings for {city_name}")
     
     conn.commit()
     conn.close()
@@ -255,7 +262,3 @@ def main():
     print(f"  Cities: {city_count}")
     print(f"  Air Quality Readings: {aq_count}")
 
-if __name__ == "__main__":
-    main()
-    
-    openweather_city_data(OW_LatLong_Dict)
