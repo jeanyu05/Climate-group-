@@ -1,0 +1,2527 @@
+{
+    "MI": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MI",
+            "stateDescription": "Michigan",
+            "value": "2546030",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MI",
+            "stateDescription": "Michigan",
+            "value": "2715153",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MI",
+            "stateDescription": "Michigan",
+            "value": "2661702",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MI",
+            "stateDescription": "Michigan",
+            "value": "2563119",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MI",
+            "stateDescription": "Michigan",
+            "value": "2842770",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MI",
+            "stateDescription": "Michigan",
+            "value": "2874333",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MI",
+            "stateDescription": "Michigan",
+            "value": "2760593",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MI",
+            "stateDescription": "Michigan",
+            "value": "2772026",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MI",
+            "stateDescription": "Michigan",
+            "value": "2793298",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MI",
+            "stateDescription": "Michigan",
+            "value": "2880765",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MI",
+            "stateDescription": "Michigan",
+            "value": "2843437",
+            "unit": "Billion Btu"
+        }
+    ],
+    "OH": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "OH",
+            "stateDescription": "Ohio",
+            "value": "3381523",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "OH",
+            "stateDescription": "Ohio",
+            "value": "3515262",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "OH",
+            "stateDescription": "Ohio",
+            "value": "3492325",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "OH",
+            "stateDescription": "Ohio",
+            "value": "3346076",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "OH",
+            "stateDescription": "Ohio",
+            "value": "3570278",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "OH",
+            "stateDescription": "Ohio",
+            "value": "3697556",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "OH",
+            "stateDescription": "Ohio",
+            "value": "3556786",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "OH",
+            "stateDescription": "Ohio",
+            "value": "3611003",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "OH",
+            "stateDescription": "Ohio",
+            "value": "3659377",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "OH",
+            "stateDescription": "Ohio",
+            "value": "3761753",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "OH",
+            "stateDescription": "Ohio",
+            "value": "3657338",
+            "unit": "Billion Btu"
+        }
+    ],
+    "IN": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IN",
+            "stateDescription": "Indiana",
+            "value": "2556020",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IN",
+            "stateDescription": "Indiana",
+            "value": "2622667",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IN",
+            "stateDescription": "Indiana",
+            "value": "2649804",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IN",
+            "stateDescription": "Indiana",
+            "value": "2502250",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IN",
+            "stateDescription": "Indiana",
+            "value": "2732808",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IN",
+            "stateDescription": "Indiana",
+            "value": "2769168",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IN",
+            "stateDescription": "Indiana",
+            "value": "2631104",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IN",
+            "stateDescription": "Indiana",
+            "value": "2733729",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IN",
+            "stateDescription": "Indiana",
+            "value": "2786528",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IN",
+            "stateDescription": "Indiana",
+            "value": "2882058",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IN",
+            "stateDescription": "Indiana",
+            "value": "2839873",
+            "unit": "Billion Btu"
+        }
+    ],
+    "IL": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IL",
+            "stateDescription": "Illinois",
+            "value": "3481110",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IL",
+            "stateDescription": "Illinois",
+            "value": "3667907",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IL",
+            "stateDescription": "Illinois",
+            "value": "3627843",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IL",
+            "stateDescription": "Illinois",
+            "value": "3544393",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IL",
+            "stateDescription": "Illinois",
+            "value": "3883106",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IL",
+            "stateDescription": "Illinois",
+            "value": "3957944",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IL",
+            "stateDescription": "Illinois",
+            "value": "3830008",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IL",
+            "stateDescription": "Illinois",
+            "value": "3873296",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IL",
+            "stateDescription": "Illinois",
+            "value": "3869319",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IL",
+            "stateDescription": "Illinois",
+            "value": "4036853",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IL",
+            "stateDescription": "Illinois",
+            "value": "3960891",
+            "unit": "Billion Btu"
+        }
+    ],
+    "WI": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WI",
+            "stateDescription": "Wisconsin",
+            "value": "1656666",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WI",
+            "stateDescription": "Wisconsin",
+            "value": "1762706",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WI",
+            "stateDescription": "Wisconsin",
+            "value": "1721518",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WI",
+            "stateDescription": "Wisconsin",
+            "value": "1660360",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WI",
+            "stateDescription": "Wisconsin",
+            "value": "1812971",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WI",
+            "stateDescription": "Wisconsin",
+            "value": "1862142",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WI",
+            "stateDescription": "Wisconsin",
+            "value": "1782766",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WI",
+            "stateDescription": "Wisconsin",
+            "value": "1766219",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WI",
+            "stateDescription": "Wisconsin",
+            "value": "1785037",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WI",
+            "stateDescription": "Wisconsin",
+            "value": "1853190",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WI",
+            "stateDescription": "Wisconsin",
+            "value": "1804527",
+            "unit": "Billion Btu"
+        }
+    ],
+    "MN": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MN",
+            "stateDescription": "Minnesota",
+            "value": "1689347",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MN",
+            "stateDescription": "Minnesota",
+            "value": "1756521",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MN",
+            "stateDescription": "Minnesota",
+            "value": "1722799",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MN",
+            "stateDescription": "Minnesota",
+            "value": "1641084",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MN",
+            "stateDescription": "Minnesota",
+            "value": "1822743",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MN",
+            "stateDescription": "Minnesota",
+            "value": "1857732",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MN",
+            "stateDescription": "Minnesota",
+            "value": "1779864",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MN",
+            "stateDescription": "Minnesota",
+            "value": "1770218",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MN",
+            "stateDescription": "Minnesota",
+            "value": "1745646",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MN",
+            "stateDescription": "Minnesota",
+            "value": "1868758",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MN",
+            "stateDescription": "Minnesota",
+            "value": "1821287",
+            "unit": "Billion Btu"
+        }
+    ],
+    "IA": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IA",
+            "stateDescription": "Iowa",
+            "value": "1405348",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IA",
+            "stateDescription": "Iowa",
+            "value": "1426912",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IA",
+            "stateDescription": "Iowa",
+            "value": "1386003",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IA",
+            "stateDescription": "Iowa",
+            "value": "1349856",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IA",
+            "stateDescription": "Iowa",
+            "value": "1503248",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IA",
+            "stateDescription": "Iowa",
+            "value": "1521108",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IA",
+            "stateDescription": "Iowa",
+            "value": "1450929",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IA",
+            "stateDescription": "Iowa",
+            "value": "1413797",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IA",
+            "stateDescription": "Iowa",
+            "value": "1404968",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IA",
+            "stateDescription": "Iowa",
+            "value": "1444176",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "IA",
+            "stateDescription": "Iowa",
+            "value": "1430536",
+            "unit": "Billion Btu"
+        }
+    ],
+    "MO": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MO",
+            "stateDescription": "Missouri",
+            "value": "1682109",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MO",
+            "stateDescription": "Missouri",
+            "value": "1729692",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MO",
+            "stateDescription": "Missouri",
+            "value": "1696217",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MO",
+            "stateDescription": "Missouri",
+            "value": "1654405",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MO",
+            "stateDescription": "Missouri",
+            "value": "1772161",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MO",
+            "stateDescription": "Missouri",
+            "value": "1836775",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MO",
+            "stateDescription": "Missouri",
+            "value": "1723077",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MO",
+            "stateDescription": "Missouri",
+            "value": "1762092",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MO",
+            "stateDescription": "Missouri",
+            "value": "1812856",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MO",
+            "stateDescription": "Missouri",
+            "value": "1898566",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MO",
+            "stateDescription": "Missouri",
+            "value": "1837700",
+            "unit": "Billion Btu"
+        }
+    ],
+    "KY": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "KY",
+            "stateDescription": "Kentucky",
+            "value": "1610859",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "KY",
+            "stateDescription": "Kentucky",
+            "value": "1669076",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "KY",
+            "stateDescription": "Kentucky",
+            "value": "1642890",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "KY",
+            "stateDescription": "Kentucky",
+            "value": "1544118",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "KY",
+            "stateDescription": "Kentucky",
+            "value": "1685758",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "KY",
+            "stateDescription": "Kentucky",
+            "value": "1708797",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "KY",
+            "stateDescription": "Kentucky",
+            "value": "1624233",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "KY",
+            "stateDescription": "Kentucky",
+            "value": "1676582",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "KY",
+            "stateDescription": "Kentucky",
+            "value": "1703432",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "KY",
+            "stateDescription": "Kentucky",
+            "value": "1754198",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "KY",
+            "stateDescription": "Kentucky",
+            "value": "1811778",
+            "unit": "Billion Btu"
+        }
+    ],
+    "TN": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "TN",
+            "stateDescription": "Tennessee",
+            "value": "2058850",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "TN",
+            "stateDescription": "Tennessee",
+            "value": "2107068",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "TN",
+            "stateDescription": "Tennessee",
+            "value": "2101722",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "TN",
+            "stateDescription": "Tennessee",
+            "value": "1941200",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "TN",
+            "stateDescription": "Tennessee",
+            "value": "2094297",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "TN",
+            "stateDescription": "Tennessee",
+            "value": "2144103",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "TN",
+            "stateDescription": "Tennessee",
+            "value": "2068889",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "TN",
+            "stateDescription": "Tennessee",
+            "value": "2140902",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "TN",
+            "stateDescription": "Tennessee",
+            "value": "2099072",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "TN",
+            "stateDescription": "Tennessee",
+            "value": "2127976",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "TN",
+            "stateDescription": "Tennessee",
+            "value": "2042401",
+            "unit": "Billion Btu"
+        }
+    ],
+    "PA": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "PA",
+            "stateDescription": "Pennsylvania",
+            "value": "3607727",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "PA",
+            "stateDescription": "Pennsylvania",
+            "value": "3739090",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "PA",
+            "stateDescription": "Pennsylvania",
+            "value": "3615386",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "PA",
+            "stateDescription": "Pennsylvania",
+            "value": "3388276",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "PA",
+            "stateDescription": "Pennsylvania",
+            "value": "3793398",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "PA",
+            "stateDescription": "Pennsylvania",
+            "value": "3899981",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "PA",
+            "stateDescription": "Pennsylvania",
+            "value": "3738826",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "PA",
+            "stateDescription": "Pennsylvania",
+            "value": "3738684",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "PA",
+            "stateDescription": "Pennsylvania",
+            "value": "3873568",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "PA",
+            "stateDescription": "Pennsylvania",
+            "value": "3958080",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "PA",
+            "stateDescription": "Pennsylvania",
+            "value": "3832199",
+            "unit": "Billion Btu"
+        }
+    ],
+    "WV": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WV",
+            "stateDescription": "West Virginia",
+            "value": "832818",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WV",
+            "stateDescription": "West Virginia",
+            "value": "829689",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WV",
+            "stateDescription": "West Virginia",
+            "value": "835893",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WV",
+            "stateDescription": "West Virginia",
+            "value": "786367",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WV",
+            "stateDescription": "West Virginia",
+            "value": "817772",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WV",
+            "stateDescription": "West Virginia",
+            "value": "818410",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WV",
+            "stateDescription": "West Virginia",
+            "value": "742118",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WV",
+            "stateDescription": "West Virginia",
+            "value": "752502",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WV",
+            "stateDescription": "West Virginia",
+            "value": "759008",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WV",
+            "stateDescription": "West Virginia",
+            "value": "772016",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "WV",
+            "stateDescription": "West Virginia",
+            "value": "740619",
+            "unit": "Billion Btu"
+        }
+    ],
+    "VA": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VA",
+            "stateDescription": "Virginia",
+            "value": "2434331",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VA",
+            "stateDescription": "Virginia",
+            "value": "2449358",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VA",
+            "stateDescription": "Virginia",
+            "value": "2388495",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VA",
+            "stateDescription": "Virginia",
+            "value": "2239403",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VA",
+            "stateDescription": "Virginia",
+            "value": "2422113",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VA",
+            "stateDescription": "Virginia",
+            "value": "2454026",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VA",
+            "stateDescription": "Virginia",
+            "value": "2362642",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VA",
+            "stateDescription": "Virginia",
+            "value": "2385410",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VA",
+            "stateDescription": "Virginia",
+            "value": "2407022",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VA",
+            "stateDescription": "Virginia",
+            "value": "2445382",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VA",
+            "stateDescription": "Virginia",
+            "value": "2389742",
+            "unit": "Billion Btu"
+        }
+    ],
+    "MD": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MD",
+            "stateDescription": "Maryland",
+            "value": "1182538",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MD",
+            "stateDescription": "Maryland",
+            "value": "1207682",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MD",
+            "stateDescription": "Maryland",
+            "value": "1220640",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MD",
+            "stateDescription": "Maryland",
+            "value": "1164321",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MD",
+            "stateDescription": "Maryland",
+            "value": "1312030",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MD",
+            "stateDescription": "Maryland",
+            "value": "1342915",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MD",
+            "stateDescription": "Maryland",
+            "value": "1297897",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MD",
+            "stateDescription": "Maryland",
+            "value": "1346485",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MD",
+            "stateDescription": "Maryland",
+            "value": "1388386",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MD",
+            "stateDescription": "Maryland",
+            "value": "1391056",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MD",
+            "stateDescription": "Maryland",
+            "value": "1379424",
+            "unit": "Billion Btu"
+        }
+    ],
+    "DE": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "DE",
+            "stateDescription": "Delaware",
+            "value": "268489",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "DE",
+            "stateDescription": "Delaware",
+            "value": "275202",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "DE",
+            "stateDescription": "Delaware",
+            "value": "281139",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "DE",
+            "stateDescription": "Delaware",
+            "value": "263852",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "DE",
+            "stateDescription": "Delaware",
+            "value": "291612",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "DE",
+            "stateDescription": "Delaware",
+            "value": "292792",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "DE",
+            "stateDescription": "Delaware",
+            "value": "274293",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "DE",
+            "stateDescription": "Delaware",
+            "value": "276704",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "DE",
+            "stateDescription": "Delaware",
+            "value": "280239",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "DE",
+            "stateDescription": "Delaware",
+            "value": "276437",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "DE",
+            "stateDescription": "Delaware",
+            "value": "276690",
+            "unit": "Billion Btu"
+        }
+    ],
+    "NY": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NY",
+            "stateDescription": "New York",
+            "value": "3435851",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NY",
+            "stateDescription": "New York",
+            "value": "3454952",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NY",
+            "stateDescription": "New York",
+            "value": "3344973",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NY",
+            "stateDescription": "New York",
+            "value": "3140605",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NY",
+            "stateDescription": "New York",
+            "value": "3630938",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NY",
+            "stateDescription": "New York",
+            "value": "3733607",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NY",
+            "stateDescription": "New York",
+            "value": "3559863",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NY",
+            "stateDescription": "New York",
+            "value": "3579084",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NY",
+            "stateDescription": "New York",
+            "value": "3656195",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NY",
+            "stateDescription": "New York",
+            "value": "3652396",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NY",
+            "stateDescription": "New York",
+            "value": "3543978",
+            "unit": "Billion Btu"
+        }
+    ],
+    "NJ": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NJ",
+            "stateDescription": "New Jersey",
+            "value": "1982093",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NJ",
+            "stateDescription": "New Jersey",
+            "value": "2024453",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NJ",
+            "stateDescription": "New Jersey",
+            "value": "1965640",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NJ",
+            "stateDescription": "New Jersey",
+            "value": "1862419",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NJ",
+            "stateDescription": "New Jersey",
+            "value": "2075118",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NJ",
+            "stateDescription": "New Jersey",
+            "value": "2172173",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NJ",
+            "stateDescription": "New Jersey",
+            "value": "2071414",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NJ",
+            "stateDescription": "New Jersey",
+            "value": "2125385",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NJ",
+            "stateDescription": "New Jersey",
+            "value": "2167326",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NJ",
+            "stateDescription": "New Jersey",
+            "value": "2212723",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NJ",
+            "stateDescription": "New Jersey",
+            "value": "2198977",
+            "unit": "Billion Btu"
+        }
+    ],
+    "CT": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "CT",
+            "stateDescription": "Connecticut",
+            "value": "688919",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "CT",
+            "stateDescription": "Connecticut",
+            "value": "717398",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "CT",
+            "stateDescription": "Connecticut",
+            "value": "699063",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "CT",
+            "stateDescription": "Connecticut",
+            "value": "664926",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "CT",
+            "stateDescription": "Connecticut",
+            "value": "730033",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "CT",
+            "stateDescription": "Connecticut",
+            "value": "750446",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "CT",
+            "stateDescription": "Connecticut",
+            "value": "724109",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "CT",
+            "stateDescription": "Connecticut",
+            "value": "721667",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "CT",
+            "stateDescription": "Connecticut",
+            "value": "754395",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "CT",
+            "stateDescription": "Connecticut",
+            "value": "748771",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "CT",
+            "stateDescription": "Connecticut",
+            "value": "744710",
+            "unit": "Billion Btu"
+        }
+    ],
+    "MA": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MA",
+            "stateDescription": "Massachusetts",
+            "value": "1282598",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MA",
+            "stateDescription": "Massachusetts",
+            "value": "1323437",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MA",
+            "stateDescription": "Massachusetts",
+            "value": "1281224",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MA",
+            "stateDescription": "Massachusetts",
+            "value": "1218458",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MA",
+            "stateDescription": "Massachusetts",
+            "value": "1414168",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MA",
+            "stateDescription": "Massachusetts",
+            "value": "1415812",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MA",
+            "stateDescription": "Massachusetts",
+            "value": "1387116",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MA",
+            "stateDescription": "Massachusetts",
+            "value": "1388616",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MA",
+            "stateDescription": "Massachusetts",
+            "value": "1436710",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MA",
+            "stateDescription": "Massachusetts",
+            "value": "1420593",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "MA",
+            "stateDescription": "Massachusetts",
+            "value": "1414817",
+            "unit": "Billion Btu"
+        }
+    ],
+    "RI": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "RI",
+            "stateDescription": "Rhode Island",
+            "value": "183037",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "RI",
+            "stateDescription": "Rhode Island",
+            "value": "188281",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "RI",
+            "stateDescription": "Rhode Island",
+            "value": "183461",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "RI",
+            "stateDescription": "Rhode Island",
+            "value": "172617",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "RI",
+            "stateDescription": "Rhode Island",
+            "value": "187844",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "RI",
+            "stateDescription": "Rhode Island",
+            "value": "193939",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "RI",
+            "stateDescription": "Rhode Island",
+            "value": "180781",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "RI",
+            "stateDescription": "Rhode Island",
+            "value": "183576",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "RI",
+            "stateDescription": "Rhode Island",
+            "value": "201693",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "RI",
+            "stateDescription": "Rhode Island",
+            "value": "202368",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "RI",
+            "stateDescription": "Rhode Island",
+            "value": "195495",
+            "unit": "Billion Btu"
+        }
+    ],
+    "VT": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VT",
+            "stateDescription": "Vermont",
+            "value": "113131",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VT",
+            "stateDescription": "Vermont",
+            "value": "116194",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VT",
+            "stateDescription": "Vermont",
+            "value": "115545",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VT",
+            "stateDescription": "Vermont",
+            "value": "112652",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VT",
+            "stateDescription": "Vermont",
+            "value": "132786",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VT",
+            "stateDescription": "Vermont",
+            "value": "133257",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VT",
+            "stateDescription": "Vermont",
+            "value": "129119",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VT",
+            "stateDescription": "Vermont",
+            "value": "130518",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VT",
+            "stateDescription": "Vermont",
+            "value": "136391",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VT",
+            "stateDescription": "Vermont",
+            "value": "137334",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "VT",
+            "stateDescription": "Vermont",
+            "value": "134426",
+            "unit": "Billion Btu"
+        }
+    ],
+    "NH": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NH",
+            "stateDescription": "New Hampshire",
+            "value": "294321",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NH",
+            "stateDescription": "New Hampshire",
+            "value": "297437",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NH",
+            "stateDescription": "New Hampshire",
+            "value": "292599",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NH",
+            "stateDescription": "New Hampshire",
+            "value": "284877",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NH",
+            "stateDescription": "New Hampshire",
+            "value": "312477",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NH",
+            "stateDescription": "New Hampshire",
+            "value": "318225",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NH",
+            "stateDescription": "New Hampshire",
+            "value": "310352",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NH",
+            "stateDescription": "New Hampshire",
+            "value": "301511",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NH",
+            "stateDescription": "New Hampshire",
+            "value": "310707",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NH",
+            "stateDescription": "New Hampshire",
+            "value": "307879",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "NH",
+            "stateDescription": "New Hampshire",
+            "value": "299577",
+            "unit": "Billion Btu"
+        }
+    ],
+    "ME": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ME",
+            "stateDescription": "Maine",
+            "value": "328694",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ME",
+            "stateDescription": "Maine",
+            "value": "327881",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ME",
+            "stateDescription": "Maine",
+            "value": "333070",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ME",
+            "stateDescription": "Maine",
+            "value": "323556",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ME",
+            "stateDescription": "Maine",
+            "value": "350876",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ME",
+            "stateDescription": "Maine",
+            "value": "356678",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ME",
+            "stateDescription": "Maine",
+            "value": "355190",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ME",
+            "stateDescription": "Maine",
+            "value": "368556",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ME",
+            "stateDescription": "Maine",
+            "value": "399704",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ME",
+            "stateDescription": "Maine",
+            "value": "389798",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ME",
+            "stateDescription": "Maine",
+            "value": "390992",
+            "unit": "Billion Btu"
+        }
+    ],
+    "SD": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "SD",
+            "stateDescription": "South Dakota",
+            "value": "347234",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "SD",
+            "stateDescription": "South Dakota",
+            "value": "353929",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "SD",
+            "stateDescription": "South Dakota",
+            "value": "348463",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "SD",
+            "stateDescription": "South Dakota",
+            "value": "339058",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "SD",
+            "stateDescription": "South Dakota",
+            "value": "351244",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "SD",
+            "stateDescription": "South Dakota",
+            "value": "354090",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "SD",
+            "stateDescription": "South Dakota",
+            "value": "344608",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "SD",
+            "stateDescription": "South Dakota",
+            "value": "337513",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "SD",
+            "stateDescription": "South Dakota",
+            "value": "344475",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "SD",
+            "stateDescription": "South Dakota",
+            "value": "344667",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "SD",
+            "stateDescription": "South Dakota",
+            "value": "347198",
+            "unit": "Billion Btu"
+        }
+    ],
+    "ND": [
+        {
+            "period": "2023",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ND",
+            "stateDescription": "North Dakota",
+            "value": "704070",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2022",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ND",
+            "stateDescription": "North Dakota",
+            "value": "675525",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2021",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ND",
+            "stateDescription": "North Dakota",
+            "value": "653498",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2020",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ND",
+            "stateDescription": "North Dakota",
+            "value": "619376",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2019",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ND",
+            "stateDescription": "North Dakota",
+            "value": "641433",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2018",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ND",
+            "stateDescription": "North Dakota",
+            "value": "624394",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2017",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ND",
+            "stateDescription": "North Dakota",
+            "value": "595433",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2016",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ND",
+            "stateDescription": "North Dakota",
+            "value": "555651",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2015",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ND",
+            "stateDescription": "North Dakota",
+            "value": "584323",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2014",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ND",
+            "stateDescription": "North Dakota",
+            "value": "614510",
+            "unit": "Billion Btu"
+        },
+        {
+            "period": "2013",
+            "seriesId": "TETCB",
+            "seriesDescription": "Total energy consumption",
+            "stateId": "ND",
+            "stateDescription": "North Dakota",
+            "value": "571370",
+            "unit": "Billion Btu"
+        }
+    ]
+}

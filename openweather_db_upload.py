@@ -4,8 +4,6 @@ import sqlite3
 import numpy as np
     
 def update_air_quality_date(filename):
-    with open(filename, 'r') as ofile:
-        data = json.load(ofile)
 
     for k,v in data.items():
         for AQDict in v['list']:
@@ -118,10 +116,10 @@ def setup_air_quality_data(cur, conn, data):
 
         city_name = k[:-3].strip()
 
-        cur.execute('SELECT city_id FROM Cities where city_name =?', (city_name,))
+        cur.execute('SELECT city_id FROM Cities WHERE city_name =?', (city_name,))
         city_name_id = cur.fetchone()[0]
 
-        cur.execute('SELECT date_id FROM Dates where date =?', (v['date'][0][:10],))
+        cur.execute('SELECT date_id FROM Dates WHERE date =?', (v['date'][0][:10],))
         date_id = cur.fetchone()[0]
 
         cur.execute('''INSERT OR IGNORE INTO AirQuality
@@ -140,7 +138,7 @@ def setup_air_quality_data(cur, conn, data):
                     np.average(np.array(v['pm10'])),
                     np.average(np.array(v['nh3'])),
                     )
-               )
+                )
         
         if cur.rowcount == 1:
             count += 1
