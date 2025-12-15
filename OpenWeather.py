@@ -7,61 +7,6 @@ OW_LatLong_Dict = {'Lansing':(42.7325,-84.5555),'Columbus':(39.9612,-82.9988),'I
                   'Harrisburg':(40.2732,-76.8867),'Charleston':(38.3498,-81.6326),'Richmond':(37.5407,-77.4360),'Annapolis':(38.9784,-76.4922),'Dover':(39.1582,-75.5244),
                   'Albany':(42.6526,-73.7562),'Trenton':(40.2204,-74.7643),'Hartford':(41.7658,-72.6734),'Boston':(42.3601,-71.0589),'Providence':(41.8240,-71.4128),
                   'Montpelier':(44.2601,-72.5754),'Concord':(43.2081,-71.5376),'Augusta':(44.3106,-69.7795),'Pierre':(44.3683,-100.3509),'Bismarck':(46.8083,-100.7837)}
-def create_tables():
-    conn = sqlite3.connect('climate_data.db')
-    cur = conn.cursor()
-    
-    cur.execute('''
-        CREATE TABLE IF NOT EXISTS Cities (
-            city_id INTEGER PRIMARY KEY AUTOINCREMENT,
-            city_name TEXT UNIQUE NOT NULL,
-            latitude REAL NOT NULL,
-            longitude REAL NOT NULL
-        )
-    ''')
-    
-    cur.execute('''
-        CREATE TABLE IF NOT EXISTS AirQuality (
-            air_quality_id INTEGER PRIMARY KEY AUTOINCREMENT,
-            city_id INTEGER NOT NULL,
-            dt INTEGER NOT NULL,
-            aqi INTEGER,
-            co REAL,
-            no REAL,
-            no2 REAL,
-            o3 REAL,
-            so2 REAL,
-            pm2_5 REAL,
-            pm10 REAL,
-            nh3 REAL,
-            FOREIGN KEY (city_id) REFERENCES Cities(city_id),
-            UNIQUE(city_id, dt)
-        )
-    ''')
-    
-    conn.commit()
-    conn.close()
-    print("✓ Tables created successfully")
-
-def get_city_id(city_name, lat, lon):
-    conn = sqlite3.connect('climate_data.db')
-    cur = conn.cursor()
-    
-    try:
-        cur.execute('''
-            INSERT OR IGNORE INTO Cities (city_name, latitude, longitude)
-            VALUES (?, ?, ?)
-        ''', (city_name, lat, lon))
-        conn.commit()
-        
-        cur.execute('SELECT city_id FROM Cities WHERE city_name = ?', (city_name,))
-        city_id = cur.fetchone()[0]
-        conn.close()
-        return city_id
-    except Exception as e:
-        conn.close()
-        print(f"Error with city {city_name}: {e}")
-        return None
 
 
 def openweather_city_data(latlongtup):
@@ -84,35 +29,3 @@ def openweather_city_data(latlongtup):
 
     with open('Air_quality.json', 'w') as airpolfile:
         json.dump(all_cities, airpolfile, indent=4)
-
-def get_next_batch_cities(batch_size=25):
-    conn = sqlite3.connect('climate_data.db')
-    cur = conn.cursor()
-    
-    cur.execute('''
-        SELECT city_name FROM Cities
-        WHERE city_id NOT IN (
-            SELECT DISTINCT city_id FROM AirQuality
-        )
-        LIMIT ?
-    ''', (batch_size,))
-    
-    cities_to_process = [row[0] for row in cur.fetchall()]
-    conn.close()
-    
-    if len(cities_to_process) < batch_size:
-        conn = sqlite3.connect('climate_data.db')
-        cur = conn.cursor()
-        cur.execute('SELECT city_name FROM Cities')
-        existing = {row[0] for row in cur.fetchall()}
-        conn.close()
-        
-        available = [city for city in OW_LatLong_Dict.keys() if city not in existing]
-        remaining = batch_size - len(cities_to_process)
-        cities_to_process.extend(available[:remaining])
-    
-    return cities_to_process[:batch_size]
-             
-    
-             
-openweather_city_data(OW_LatLong_Dict)
