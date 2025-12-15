@@ -21,7 +21,6 @@ OW_LatLong_Dict = {
 
 def openmeteo_city_data(citydict):
     all_cities = {}
-    Open_meteoAPIKey = ''
 
     for k,v in citydict.items():
         url = "https://archive-api.open-meteo.com/v1/archive"
@@ -30,12 +29,11 @@ def openmeteo_city_data(citydict):
 	            "longitude": v[1],
 	            "start_date": "2025-12-02",
 	            "end_date": "2025-12-05",
-	            "daily": ["temperature_2m_max", "temperature_2m_min", "sunrise", 
-                        "sunset", "daylight_duration", "sunshine_duration", 
-                        "snowfall_sum", "rain_sum", "precipitation_sum", 
-                        "wind_speed_10m_max", "wind_gusts_10m_max", "relative_humidity_2m_min", 
-                        "relative_humidity_2m_mean", "relative_humidity_2m_max", "apparent_temperature_max",
-                        "apparent_temperature_mean", "apparent_temperature_min", "temperature_2m_mean"],
+	            "daily": ["temperature_2m_max", "temperature_2m_min", "snowfall_sum", 
+                       "rain_sum", "precipitation_sum", "wind_speed_10m_max", 
+                       "relative_humidity_2m_min", "relative_humidity_2m_mean", "relative_humidity_2m_max", 
+                       "apparent_temperature_max", "apparent_temperature_mean", "apparent_temperature_min", 
+                       "temperature_2m_mean", "wind_speed_10m_mean", "wind_speed_10m_min"],
 	            "timezone": "auto",
 	            "temperature_unit": "fahrenheit",
 	            "wind_speed_unit": "mph",
@@ -50,4 +48,4 @@ def openmeteo_city_data(citydict):
     with open('Weather_Data.json', 'w') as weatherfile:
         json.dump(all_cities, weatherfile, indent=4)
 
-weatherstack_city_data(OW_LatLong_Dict)
+openmeteo_city_data(OW_LatLong_Dict)

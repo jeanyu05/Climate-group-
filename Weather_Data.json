@@ -2,7 +2,7 @@
     "Lansing": {
         "latitude": 42.7065,
         "longitude": -84.54947,
-        "generationtime_ms": 6.9245100021362305,
+        "generationtime_ms": 7.438302040100098,
         "utc_offset_seconds": -18000,
         "timezone": "America/Detroit",
         "timezone_abbreviation": "GMT-5",
@@ -11,22 +11,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -46,30 +43,6 @@
                 16.0,
                 7.0,
                 6.9
-            ],
-            "sunrise": [
-                "2025-12-02T07:50",
-                "2025-12-03T07:51",
-                "2025-12-04T07:52",
-                "2025-12-05T07:53"
-            ],
-            "sunset": [
-                "2025-12-02T17:05",
-                "2025-12-03T17:05",
-                "2025-12-04T17:04",
-                "2025-12-05T17:04"
-            ],
-            "daylight_duration": [
-                33293.91,
-                33216.19,
-                33142.09,
-                33071.74
-            ],
-            "sunshine_duration": [
-                27611.78,
-                0.0,
-                29250.67,
-                17768.6
             ],
             "snowfall_sum": [
                 0.193,
@@ -94,12 +67,6 @@
                 15.0,
                 11.8,
                 14.1
-            ],
-            "wind_gusts_10m_max": [
-                17.9,
-                30.6,
-                22.6,
-                26.4
             ],
             "relative_humidity_2m_min": [
                 90,
@@ -142,13 +109,25 @@
                 22.3,
                 15.4,
                 16.4
+            ],
+            "wind_speed_10m_mean": [
+                4.2,
+                11.1,
+                6.8,
+                9.7
+            ],
+            "wind_speed_10m_min": [
+                0.6,
+                6.7,
+                0.5,
+                6.4
             ]
         }
     },
     "Columbus": {
         "latitude": 39.964848,
         "longitude": -82.96088,
-        "generationtime_ms": 6.4868927001953125,
+        "generationtime_ms": 7.561922073364258,
         "utc_offset_seconds": -18000,
         "timezone": "America/New_York",
         "timezone_abbreviation": "GMT-5",
@@ -157,22 +136,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -192,30 +168,6 @@
                 23.5,
                 12.0,
                 11.2
-            ],
-            "sunrise": [
-                "2025-12-02T07:35",
-                "2025-12-03T07:36",
-                "2025-12-04T07:37",
-                "2025-12-05T07:38"
-            ],
-            "sunset": [
-                "2025-12-02T17:07",
-                "2025-12-03T17:06",
-                "2025-12-04T17:06",
-                "2025-12-05T17:06"
-            ],
-            "daylight_duration": [
-                34272.53,
-                34202.89,
-                34136.5,
-                34073.49
-            ],
-            "sunshine_duration": [
-                12738.77,
-                3122.82,
-                27368.2,
-                19452.43
             ],
             "snowfall_sum": [
                 2.122,
@@ -240,12 +192,6 @@
                 10.3,
                 9.0,
                 5.1
-            ],
-            "wind_gusts_10m_max": [
-                16.6,
-                21.0,
-                19.5,
-                9.8
             ],
             "relative_humidity_2m_min": [
                 80,
@@ -288,13 +234,25 @@
                 26.3,
                 23.7,
                 19.6
+            ],
+            "wind_speed_10m_mean": [
+                4.6,
+                6.9,
+                6.0,
+                2.7
+            ],
+            "wind_speed_10m_min": [
+                0.7,
+                2.3,
+                3.3,
+                0.3
             ]
         }
     },
     "Indianapolis": {
         "latitude": 39.753952,
         "longitude": -86.1196,
-        "generationtime_ms": 4.185199737548828,
+        "generationtime_ms": 3.539443016052246,
         "utc_offset_seconds": -18000,
         "timezone": "America/Indiana/Indianapolis",
         "timezone_abbreviation": "GMT-5",
@@ -303,22 +261,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -338,30 +293,6 @@
                 19.1,
                 14.2,
                 11.7
-            ],
-            "sunrise": [
-                "2025-12-02T07:47",
-                "2025-12-03T07:48",
-                "2025-12-04T07:49",
-                "2025-12-05T07:50"
-            ],
-            "sunset": [
-                "2025-12-02T17:20",
-                "2025-12-03T17:20",
-                "2025-12-04T17:19",
-                "2025-12-05T17:19"
-            ],
-            "daylight_duration": [
-                34344.09,
-                34275.03,
-                34209.2,
-                34146.71
-            ],
-            "sunshine_duration": [
-                0.0,
-                14807.14,
-                30560.91,
-                30491.68
             ],
             "snowfall_sum": [
                 0.606,
@@ -386,12 +317,6 @@
                 10.1,
                 10.4,
                 8.5
-            ],
-            "wind_gusts_10m_max": [
-                15.4,
-                20.8,
-                20.8,
-                16.1
             ],
             "relative_humidity_2m_min": [
                 86,
@@ -434,13 +359,25 @@
                 23.6,
                 22.9,
                 21.2
+            ],
+            "wind_speed_10m_mean": [
+                5.3,
+                7.2,
+                5.8,
+                3.9
+            ],
+            "wind_speed_10m_min": [
+                1.8,
+                5.2,
+                3.3,
+                1.1
             ]
         }
     },
     "Springfield": {
         "latitude": 39.753952,
         "longitude": -89.62448,
-        "generationtime_ms": 1.0393857955932617,
+        "generationtime_ms": 1.8694400787353516,
         "utc_offset_seconds": -21600,
         "timezone": "America/Chicago",
         "timezone_abbreviation": "GMT-6",
@@ -449,22 +386,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -484,30 +418,6 @@
                 20.0,
                 3.9,
                 2.9
-            ],
-            "sunrise": [
-                "2025-12-02T07:01",
-                "2025-12-03T07:02",
-                "2025-12-04T07:03",
-                "2025-12-05T07:04"
-            ],
-            "sunset": [
-                "2025-12-02T16:34",
-                "2025-12-03T16:34",
-                "2025-12-04T16:34",
-                "2025-12-05T16:33"
-            ],
-            "daylight_duration": [
-                34341.14,
-                34272.22,
-                34206.52,
-                34144.19
-            ],
-            "sunshine_duration": [
-                987.51,
-                24279.88,
-                29372.57,
-                29221.2
             ],
             "snowfall_sum": [
                 0.0,
@@ -532,12 +442,6 @@
                 12.6,
                 11.1,
                 10.3
-            ],
-            "wind_gusts_10m_max": [
-                18.8,
-                23.0,
-                20.6,
-                18.3
             ],
             "relative_humidity_2m_min": [
                 85,
@@ -580,13 +484,25 @@
                 25.8,
                 12.3,
                 17.6
+            ],
+            "wind_speed_10m_mean": [
+                7.0,
+                8.2,
+                5.3,
+                7.2
+            ],
+            "wind_speed_10m_min": [
+                4.4,
+                4.9,
+                2.2,
+                3.7
             ]
         }
     },
     "Madison": {
         "latitude": 43.057995,
         "longitude": -89.33035,
-        "generationtime_ms": 6.800413131713867,
+        "generationtime_ms": 6.057381629943848,
         "utc_offset_seconds": -21600,
         "timezone": "America/Chicago",
         "timezone_abbreviation": "GMT-6",
@@ -595,22 +511,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -630,30 +543,6 @@
                 10.3,
                 -1.9,
                 6.2
-            ],
-            "sunrise": [
-                "2025-12-02T07:10",
-                "2025-12-03T07:11",
-                "2025-12-04T07:12",
-                "2025-12-05T07:13"
-            ],
-            "sunset": [
-                "2025-12-02T16:23",
-                "2025-12-03T16:23",
-                "2025-12-04T16:22",
-                "2025-12-05T16:22"
-            ],
-            "daylight_duration": [
-                33158.03,
-                33079.35,
-                33004.34,
-                32933.14
-            ],
-            "sunshine_duration": [
-                573.74,
-                0.0,
-                28967.9,
-                13607.43
             ],
             "snowfall_sum": [
                 0.0,
@@ -678,12 +567,6 @@
                 14.9,
                 11.3,
                 13.8
-            ],
-            "wind_gusts_10m_max": [
-                23.3,
-                26.4,
-                19.5,
-                23.9
             ],
             "relative_humidity_2m_min": [
                 88,
@@ -726,13 +609,25 @@
                 23.1,
                 5.2,
                 19.0
+            ],
+            "wind_speed_10m_mean": [
+                8.7,
+                11.0,
+                6.0,
+                10.5
+            ],
+            "wind_speed_10m_min": [
+                4.6,
+                7.8,
+                1.2,
+                6.6
             ]
         }
     },
     "Saint Paul": {
         "latitude": 44.956062,
         "longitude": -93.06976,
-        "generationtime_ms": 5.877375602722168,
+        "generationtime_ms": 4.078984260559082,
         "utc_offset_seconds": -21600,
         "timezone": "America/Chicago",
         "timezone_abbreviation": "GMT-6",
@@ -741,22 +636,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -776,30 +668,6 @@
                 -1.2,
                 -10.8,
                 16.9
-            ],
-            "sunrise": [
-                "2025-12-02T07:31",
-                "2025-12-03T07:32",
-                "2025-12-04T07:34",
-                "2025-12-05T07:35"
-            ],
-            "sunset": [
-                "2025-12-02T16:32",
-                "2025-12-03T16:31",
-                "2025-12-04T16:31",
-                "2025-12-05T16:31"
-            ],
-            "daylight_duration": [
-                32410.53,
-                32325.5,
-                32244.43,
-                32167.47
-            ],
-            "sunshine_duration": [
-                12498.09,
-                21065.11,
-                28129.89,
-                0.0
             ],
             "snowfall_sum": [
                 0.165,
@@ -824,12 +692,6 @@
                 11.9,
                 12.9,
                 12.5
-            ],
-            "wind_gusts_10m_max": [
-                19.2,
-                25.3,
-                25.1,
-                27.1
             ],
             "relative_humidity_2m_min": [
                 80,
@@ -872,13 +734,25 @@
                 14.6,
                 1.8,
                 22.2
+            ],
+            "wind_speed_10m_mean": [
+                7.6,
+                9.3,
+                7.9,
+                5.9
+            ],
+            "wind_speed_10m_min": [
+                6.3,
+                5.7,
+                3.3,
+                1.2
             ]
         }
     },
     "Des Moines": {
         "latitude": 41.581722,
         "longitude": -93.63635,
-        "generationtime_ms": 4.560112953186035,
+        "generationtime_ms": 5.280733108520508,
         "utc_offset_seconds": -21600,
         "timezone": "America/Chicago",
         "timezone_abbreviation": "GMT-6",
@@ -887,22 +761,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -922,30 +793,6 @@
                 5.9,
                 -7.4,
                 17.3
-            ],
-            "sunrise": [
-                "2025-12-02T07:23",
-                "2025-12-03T07:24",
-                "2025-12-04T07:25",
-                "2025-12-05T07:26"
-            ],
-            "sunset": [
-                "2025-12-02T16:45",
-                "2025-12-03T16:44",
-                "2025-12-04T16:44",
-                "2025-12-05T16:44"
-            ],
-            "daylight_duration": [
-                33703.6,
-                33629.46,
-                33558.78,
-                33491.71
-            ],
-            "sunshine_duration": [
-                16524.84,
-                5673.35,
-                28828.68,
-                29059.19
             ],
             "snowfall_sum": [
                 0.0,
@@ -970,12 +817,6 @@
                 12.1,
                 9.3,
                 11.0
-            ],
-            "wind_gusts_10m_max": [
-                20.6,
-                25.1,
-                17.4,
-                21.0
             ],
             "relative_humidity_2m_min": [
                 83,
@@ -1018,13 +859,25 @@
                 22.7,
                 5.2,
                 27.4
+            ],
+            "wind_speed_10m_mean": [
+                7.5,
+                9.2,
+                5.3,
+                8.7
+            ],
+            "wind_speed_10m_min": [
+                5.4,
+                4.7,
+                0.1,
+                6.2
             ]
         }
     },
     "Jefferson City": {
         "latitude": 38.558872,
         "longitude": -92.20108,
-        "generationtime_ms": 7.624626159667969,
+        "generationtime_ms": 5.214214324951172,
         "utc_offset_seconds": -21600,
         "timezone": "America/Chicago",
         "timezone_abbreviation": "GMT-6",
@@ -1033,22 +886,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -1068,30 +918,6 @@
                 25.9,
                 17.2,
                 20.1
-            ],
-            "sunrise": [
-                "2025-12-02T07:08",
-                "2025-12-03T07:09",
-                "2025-12-04T07:10",
-                "2025-12-05T07:11"
-            ],
-            "sunset": [
-                "2025-12-02T16:47",
-                "2025-12-03T16:47",
-                "2025-12-04T16:47",
-                "2025-12-05T16:47"
-            ],
-            "daylight_duration": [
-                34737.73,
-                34672.01,
-                34609.38,
-                34549.94
-            ],
-            "sunshine_duration": [
-                19546.0,
-                15401.99,
-                27995.08,
-                29842.46
             ],
             "snowfall_sum": [
                 0.0,
@@ -1116,12 +942,6 @@
                 11.5,
                 11.1,
                 9.7
-            ],
-            "wind_gusts_10m_max": [
-                14.1,
-                23.0,
-                22.6,
-                21.3
             ],
             "relative_humidity_2m_min": [
                 65,
@@ -1164,13 +984,25 @@
                 31.7,
                 22.5,
                 32.6
+            ],
+            "wind_speed_10m_mean": [
+                6.0,
+                6.0,
+                6.1,
+                7.1
+            ],
+            "wind_speed_10m_min": [
+                3.3,
+                2.4,
+                2.9,
+                2.9
             ]
         }
     },
     "Frankfort": {
         "latitude": 38.20738,
         "longitude": -84.8988,
-        "generationtime_ms": 8.646368980407715,
+        "generationtime_ms": 6.614804267883301,
         "utc_offset_seconds": -18000,
         "timezone": "America/New_York",
         "timezone_abbreviation": "GMT-5",
@@ -1179,22 +1011,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -1214,30 +1043,6 @@
                 23.2,
                 27.9,
                 22.7
-            ],
-            "sunrise": [
-                "2025-12-02T07:38",
-                "2025-12-03T07:39",
-                "2025-12-04T07:40",
-                "2025-12-05T07:41"
-            ],
-            "sunset": [
-                "2025-12-02T17:19",
-                "2025-12-03T17:19",
-                "2025-12-04T17:19",
-                "2025-12-05T17:19"
-            ],
-            "daylight_duration": [
-                34854.34,
-                34789.41,
-                34727.51,
-                34668.77
-            ],
-            "sunshine_duration": [
-                4774.57,
-                12265.48,
-                393.3,
-                18199.81
             ],
             "snowfall_sum": [
                 1.681,
@@ -1262,12 +1067,6 @@
                 6.6,
                 7.8,
                 6.4
-            ],
-            "wind_gusts_10m_max": [
-                17.4,
-                14.1,
-                16.3,
-                11.0
             ],
             "relative_humidity_2m_min": [
                 80,
@@ -1310,13 +1109,25 @@
                 27.7,
                 30.4,
                 29.5
+            ],
+            "wind_speed_10m_mean": [
+                5.5,
+                5.0,
+                5.2,
+                3.3
+            ],
+            "wind_speed_10m_min": [
+                2.9,
+                2.6,
+                2.9,
+                0.7
             ]
         }
     },
     "Nashville": {
         "latitude": 36.168716,
         "longitude": -86.727264,
-        "generationtime_ms": 10.901331901550293,
+        "generationtime_ms": 6.664514541625977,
         "utc_offset_seconds": -21600,
         "timezone": "America/Chicago",
         "timezone_abbreviation": "GMT-6",
@@ -1325,22 +1136,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -1360,30 +1168,6 @@
                 27.2,
                 32.5,
                 31.6
-            ],
-            "sunrise": [
-                "2025-12-02T06:40",
-                "2025-12-03T06:41",
-                "2025-12-04T06:42",
-                "2025-12-05T06:43"
-            ],
-            "sunset": [
-                "2025-12-02T16:32",
-                "2025-12-03T16:32",
-                "2025-12-04T16:32",
-                "2025-12-05T16:32"
-            ],
-            "daylight_duration": [
-                35488.75,
-                35429.0,
-                35372.07,
-                35318.06
-            ],
-            "sunshine_duration": [
-                546.53,
-                18451.54,
-                0.0,
-                11789.86
             ],
             "snowfall_sum": [
                 0.0,
@@ -1408,12 +1192,6 @@
                 4.0,
                 7.1,
                 5.5
-            ],
-            "wind_gusts_10m_max": [
-                20.1,
-                11.9,
-                16.8,
-                11.6
             ],
             "relative_humidity_2m_min": [
                 71,
@@ -1456,13 +1234,25 @@
                 31.7,
                 35.1,
                 35.5
+            ],
+            "wind_speed_10m_mean": [
+                6.2,
+                2.1,
+                4.4,
+                3.2
+            ],
+            "wind_speed_10m_min": [
+                1.4,
+                0.3,
+                0.3,
+                1.1
             ]
         }
     },
     "Harrisburg": {
         "latitude": 40.246044,
         "longitude": -76.85394,
-        "generationtime_ms": 4.914641380310059,
+        "generationtime_ms": 6.483316421508789,
         "utc_offset_seconds": -18000,
         "timezone": "America/New_York",
         "timezone_abbreviation": "GMT-5",
@@ -1471,22 +1261,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -1506,30 +1293,6 @@
                 26.3,
                 24.4,
                 20.2
-            ],
-            "sunrise": [
-                "2025-12-02T07:12",
-                "2025-12-03T07:13",
-                "2025-12-04T07:14",
-                "2025-12-05T07:15"
-            ],
-            "sunset": [
-                "2025-12-02T16:41",
-                "2025-12-03T16:41",
-                "2025-12-04T16:41",
-                "2025-12-05T16:41"
-            ],
-            "daylight_duration": [
-                34176.34,
-                34105.91,
-                34038.78,
-                33975.05
-            ],
-            "sunshine_duration": [
-                3600.0,
-                29808.43,
-                20263.78,
-                330.28
             ],
             "snowfall_sum": [
                 3.472,
@@ -1554,12 +1317,6 @@
                 11.2,
                 13.7,
                 7.0
-            ],
-            "wind_gusts_10m_max": [
-                21.7,
-                21.7,
-                31.8,
-                15.9
             ],
             "relative_humidity_2m_min": [
                 68,
@@ -1602,13 +1359,25 @@
                 31.2,
                 30.2,
                 25.3
+            ],
+            "wind_speed_10m_mean": [
+                6.6,
+                6.1,
+                8.0,
+                5.3
+            ],
+            "wind_speed_10m_min": [
+                2.0,
+                3.7,
+                3.6,
+                2.7
             ]
         }
     },
     "Charleston": {
         "latitude": 38.347977,
         "longitude": -81.59674,
-        "generationtime_ms": 7.928133010864258,
+        "generationtime_ms": 4.629731178283691,
         "utc_offset_seconds": -18000,
         "timezone": "America/New_York",
         "timezone_abbreviation": "GMT-5",
@@ -1617,22 +1386,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -1652,30 +1418,6 @@
                 29.2,
                 29.5,
                 31.4
-            ],
-            "sunrise": [
-                "2025-12-02T07:25",
-                "2025-12-03T07:26",
-                "2025-12-04T07:27",
-                "2025-12-05T07:28"
-            ],
-            "sunset": [
-                "2025-12-02T17:06",
-                "2025-12-03T17:05",
-                "2025-12-04T17:05",
-                "2025-12-05T17:05"
-            ],
-            "daylight_duration": [
-                34808.97,
-                34743.67,
-                34681.43,
-                34622.36
-            ],
-            "sunshine_duration": [
-                0.0,
-                16921.61,
-                2510.74,
-                552.52
             ],
             "snowfall_sum": [
                 0.22,
@@ -1700,12 +1442,6 @@
                 6.3,
                 6.0,
                 5.4
-            ],
-            "wind_gusts_10m_max": [
-                20.6,
-                16.1,
-                14.5,
-                12.8
             ],
             "relative_humidity_2m_min": [
                 60,
@@ -1748,13 +1484,25 @@
                 31.4,
                 32.3,
                 34.8
+            ],
+            "wind_speed_10m_mean": [
+                6.9,
+                4.1,
+                4.7,
+                2.9
+            ],
+            "wind_speed_10m_min": [
+                2.9,
+                2.0,
+                3.8,
+                0.1
             ]
         }
     },
     "Richmond": {
         "latitude": 37.57469,
         "longitude": -77.399994,
-        "generationtime_ms": 6.912827491760254,
+        "generationtime_ms": 116.72508716583252,
         "utc_offset_seconds": -18000,
         "timezone": "America/New_York",
         "timezone_abbreviation": "GMT-5",
@@ -1763,22 +1511,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -1798,30 +1543,6 @@
                 30.2,
                 28.4,
                 30.3
-            ],
-            "sunrise": [
-                "2025-12-02T07:07",
-                "2025-12-03T07:08",
-                "2025-12-04T07:08",
-                "2025-12-05T07:09"
-            ],
-            "sunset": [
-                "2025-12-02T16:51",
-                "2025-12-03T16:51",
-                "2025-12-04T16:51",
-                "2025-12-05T16:51"
-            ],
-            "daylight_duration": [
-                35056.13,
-                34992.82,
-                34932.46,
-                34875.19
-            ],
-            "sunshine_duration": [
-                2667.45,
-                31503.88,
-                28215.45,
-                0.0
             ],
             "snowfall_sum": [
                 0.0,
@@ -1846,12 +1567,6 @@
                 10.5,
                 8.5,
                 7.4
-            ],
-            "wind_gusts_10m_max": [
-                22.8,
-                21.3,
-                16.8,
-                16.3
             ],
             "relative_humidity_2m_min": [
                 80,
@@ -1894,13 +1609,25 @@
                 36.8,
                 37.1,
                 32.2
+            ],
+            "wind_speed_10m_mean": [
+                5.4,
+                5.1,
+                5.0,
+                5.7
+            ],
+            "wind_speed_10m_min": [
+                1.3,
+                2.0,
+                2.0,
+                4.2
             ]
         }
     },
     "Annapolis": {
         "latitude": 38.980667,
         "longitude": -76.561646,
-        "generationtime_ms": 6.410479545593262,
+        "generationtime_ms": 6.488561630249023,
         "utc_offset_seconds": -18000,
         "timezone": "America/New_York",
         "timezone_abbreviation": "GMT-5",
@@ -1909,22 +1636,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -1944,30 +1668,6 @@
                 31.4,
                 29.7,
                 28.3
-            ],
-            "sunrise": [
-                "2025-12-02T07:07",
-                "2025-12-03T07:08",
-                "2025-12-04T07:09",
-                "2025-12-05T07:10"
-            ],
-            "sunset": [
-                "2025-12-02T16:44",
-                "2025-12-03T16:44",
-                "2025-12-04T16:43",
-                "2025-12-05T16:43"
-            ],
-            "daylight_duration": [
-                34602.33,
-                34535.36,
-                34471.53,
-                34410.95
-            ],
-            "sunshine_duration": [
-                0.0,
-                30598.51,
-                23861.42,
-                0.0
             ],
             "snowfall_sum": [
                 0.0,
@@ -1992,12 +1692,6 @@
                 12.2,
                 12.3,
                 10.1
-            ],
-            "wind_gusts_10m_max": [
-                23.3,
-                24.2,
-                27.1,
-                20.4
             ],
             "relative_humidity_2m_min": [
                 73,
@@ -2040,13 +1734,25 @@
                 36.0,
                 35.2,
                 30.5
+            ],
+            "wind_speed_10m_mean": [
+                7.6,
+                6.3,
+                7.6,
+                6.6
+            ],
+            "wind_speed_10m_min": [
+                3.0,
+                1.0,
+                4.4,
+                3.6
             ]
         }
     },
     "Dover": {
         "latitude": 39.191563,
         "longitude": -75.51581,
-        "generationtime_ms": 7.8868865966796875,
+        "generationtime_ms": 7.246136665344238,
         "utc_offset_seconds": -18000,
         "timezone": "America/New_York",
         "timezone_abbreviation": "GMT-5",
@@ -2055,22 +1761,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -2090,30 +1793,6 @@
                 31.1,
                 28.8,
                 26.7
-            ],
-            "sunrise": [
-                "2025-12-02T07:03",
-                "2025-12-03T07:04",
-                "2025-12-04T07:05",
-                "2025-12-05T07:06"
-            ],
-            "sunset": [
-                "2025-12-02T16:39",
-                "2025-12-03T16:39",
-                "2025-12-04T16:39",
-                "2025-12-05T16:39"
-            ],
-            "daylight_duration": [
-                34532.53,
-                34465.0,
-                34400.63,
-                34339.54
-            ],
-            "sunshine_duration": [
-                0.0,
-                30522.64,
-                30406.48,
-                909.51
             ],
             "snowfall_sum": [
                 0.0,
@@ -2138,12 +1817,6 @@
                 15.0,
                 12.9,
                 10.9
-            ],
-            "wind_gusts_10m_max": [
-                28.0,
-                28.9,
-                28.4,
-                23.5
             ],
             "relative_humidity_2m_min": [
                 71,
@@ -2186,13 +1859,25 @@
                 35.8,
                 35.0,
                 30.7
+            ],
+            "wind_speed_10m_mean": [
+                8.5,
+                8.0,
+                8.2,
+                7.1
+            ],
+            "wind_speed_10m_min": [
+                0.7,
+                2.9,
+                3.0,
+                4.9
             ]
         }
     },
     "Albany": {
         "latitude": 42.636204,
         "longitude": -73.80533,
-        "generationtime_ms": 8.081674575805664,
+        "generationtime_ms": 5.800604820251465,
         "utc_offset_seconds": -18000,
         "timezone": "America/New_York",
         "timezone_abbreviation": "GMT-5",
@@ -2201,22 +1886,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -2236,30 +1918,6 @@
                 16.0,
                 8.8,
                 1.7
-            ],
-            "sunrise": [
-                "2025-12-02T07:07",
-                "2025-12-03T07:08",
-                "2025-12-04T07:09",
-                "2025-12-05T07:10"
-            ],
-            "sunset": [
-                "2025-12-02T16:22",
-                "2025-12-03T16:22",
-                "2025-12-04T16:22",
-                "2025-12-05T16:21"
-            ],
-            "daylight_duration": [
-                33320.21,
-                33242.71,
-                33168.82,
-                33098.67
-            ],
-            "sunshine_duration": [
-                0.0,
-                25808.76,
-                21724.96,
-                27901.84
             ],
             "snowfall_sum": [
                 3.803,
@@ -2284,12 +1942,6 @@
                 10.5,
                 17.7,
                 8.1
-            ],
-            "wind_gusts_10m_max": [
-                21.7,
-                20.6,
-                35.1,
-                15.4
             ],
             "relative_humidity_2m_min": [
                 67,
@@ -2332,13 +1984,25 @@
                 23.4,
                 26.1,
                 12.7
+            ],
+            "wind_speed_10m_mean": [
+                4.9,
+                5.5,
+                8.8,
+                4.3
+            ],
+            "wind_speed_10m_min": [
+                0.1,
+                2.2,
+                4.3,
+                0.5
             ]
         }
     },
     "Trenton": {
         "latitude": 40.246044,
         "longitude": -74.70505,
-        "generationtime_ms": 0.9781122207641602,
+        "generationtime_ms": 0.7559061050415039,
         "utc_offset_seconds": -18000,
         "timezone": "America/New_York",
         "timezone_abbreviation": "GMT-5",
@@ -2347,22 +2011,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -2382,30 +2043,6 @@
                 28.9,
                 25.6,
                 22.3
-            ],
-            "sunrise": [
-                "2025-12-02T07:03",
-                "2025-12-03T07:04",
-                "2025-12-04T07:05",
-                "2025-12-05T07:06"
-            ],
-            "sunset": [
-                "2025-12-02T16:33",
-                "2025-12-03T16:33",
-                "2025-12-04T16:32",
-                "2025-12-05T16:32"
-            ],
-            "daylight_duration": [
-                34176.34,
-                34105.91,
-                34038.78,
-                33975.05
-            ],
-            "sunshine_duration": [
-                0.0,
-                30291.1,
-                18882.44,
-                11214.09
             ],
             "snowfall_sum": [
                 0.055,
@@ -2430,12 +2067,6 @@
                 12.7,
                 14.9,
                 7.8
-            ],
-            "wind_gusts_10m_max": [
-                23.5,
-                25.3,
-                34.7,
-                18.3
             ],
             "relative_humidity_2m_min": [
                 69,
@@ -2478,13 +2109,25 @@
                 34.4,
                 33.3,
                 28.0
+            ],
+            "wind_speed_10m_mean": [
+                7.4,
+                6.8,
+                9.1,
+                4.8
+            ],
+            "wind_speed_10m_min": [
+                2.6,
+                2.3,
+                5.8,
+                3.3
             ]
         }
     },
     "Hartford": {
         "latitude": 41.792618,
         "longitude": -72.65219,
-        "generationtime_ms": 7.884502410888672,
+        "generationtime_ms": 9.290575981140137,
         "utc_offset_seconds": -18000,
         "timezone": "America/New_York",
         "timezone_abbreviation": "GMT-5",
@@ -2493,22 +2136,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -2528,30 +2168,6 @@
                 26.1,
                 18.0,
                 11.6
-            ],
-            "sunrise": [
-                "2025-12-02T06:59",
-                "2025-12-03T07:00",
-                "2025-12-04T07:02",
-                "2025-12-05T07:02"
-            ],
-            "sunset": [
-                "2025-12-02T16:20",
-                "2025-12-03T16:20",
-                "2025-12-04T16:20",
-                "2025-12-05T16:19"
-            ],
-            "daylight_duration": [
-                33630.62,
-                33555.7,
-                33484.27,
-                33416.48
-            ],
-            "sunshine_duration": [
-                0.0,
-                29756.45,
-                18353.93,
-                29601.1
             ],
             "snowfall_sum": [
                 1.874,
@@ -2576,12 +2192,6 @@
                 12.3,
                 16.2,
                 10.1
-            ],
-            "wind_gusts_10m_max": [
-                28.0,
-                26.4,
-                35.1,
-                28.0
             ],
             "relative_humidity_2m_min": [
                 68,
@@ -2624,13 +2234,25 @@
                 30.6,
                 30.3,
                 21.1
+            ],
+            "wind_speed_10m_mean": [
+                6.9,
+                5.5,
+                8.6,
+                3.7
+            ],
+            "wind_speed_10m_min": [
+                0.5,
+                0.6,
+                3.0,
+                0.4
             ]
         }
     },
     "Boston": {
         "latitude": 42.355007,
         "longitude": -71.12906,
-        "generationtime_ms": 7.359862327575684,
+        "generationtime_ms": 6.999731063842773,
         "utc_offset_seconds": -18000,
         "timezone": "America/New_York",
         "timezone_abbreviation": "GMT-5",
@@ -2639,22 +2261,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -2674,30 +2293,6 @@
                 28.8,
                 17.8,
                 9.9
-            ],
-            "sunrise": [
-                "2025-12-02T06:55",
-                "2025-12-03T06:56",
-                "2025-12-04T06:57",
-                "2025-12-05T06:58"
-            ],
-            "sunset": [
-                "2025-12-02T16:12",
-                "2025-12-03T16:12",
-                "2025-12-04T16:12",
-                "2025-12-05T16:12"
-            ],
-            "daylight_duration": [
-                33424.73,
-                33348.11,
-                33275.04,
-                33205.69
-            ],
-            "sunshine_duration": [
-                0.0,
-                29500.24,
-                26522.65,
-                29341.04
             ],
             "snowfall_sum": [
                 0.028,
@@ -2722,12 +2317,6 @@
                 14.7,
                 17.8,
                 11.7
-            ],
-            "wind_gusts_10m_max": [
-                38.0,
-                30.2,
-                39.1,
-                29.8
             ],
             "relative_humidity_2m_min": [
                 60,
@@ -2770,13 +2359,25 @@
                 31.8,
                 30.9,
                 18.5
+            ],
+            "wind_speed_10m_mean": [
+                7.6,
+                7.8,
+                10.6,
+                5.1
+            ],
+            "wind_speed_10m_min": [
+                0.7,
+                0.9,
+                6.1,
+                1.6
             ]
         }
     },
     "Providence": {
         "latitude": 41.792618,
         "longitude": -71.34784,
-        "generationtime_ms": 0.28908252716064453,
+        "generationtime_ms": 0.7171630859375,
         "utc_offset_seconds": -18000,
         "timezone": "America/New_York",
         "timezone_abbreviation": "GMT-5",
@@ -2785,22 +2386,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -2820,30 +2418,6 @@
                 30.7,
                 20.7,
                 14.6
-            ],
-            "sunrise": [
-                "2025-12-02T06:54",
-                "2025-12-03T06:55",
-                "2025-12-04T06:56",
-                "2025-12-05T06:57"
-            ],
-            "sunset": [
-                "2025-12-02T16:15",
-                "2025-12-03T16:15",
-                "2025-12-04T16:14",
-                "2025-12-05T16:14"
-            ],
-            "daylight_duration": [
-                33630.62,
-                33555.7,
-                33484.27,
-                33416.48
-            ],
-            "sunshine_duration": [
-                0.0,
-                29756.45,
-                23997.98,
-                29601.1
             ],
             "snowfall_sum": [
                 0.055,
@@ -2868,12 +2442,6 @@
                 16.8,
                 19.2,
                 13.6
-            ],
-            "wind_gusts_10m_max": [
-                34.9,
-                32.9,
-                42.1,
-                29.8
             ],
             "relative_humidity_2m_min": [
                 67,
@@ -2916,13 +2484,25 @@
                 34.5,
                 32.9,
                 21.9
+            ],
+            "wind_speed_10m_mean": [
+                8.0,
+                7.4,
+                10.1,
+                5.3
+            ],
+            "wind_speed_10m_min": [
+                2.3,
+                0.9,
+                3.9,
+                0.9
             ]
         }
     },
     "Montpelier": {
         "latitude": 44.253075,
         "longitude": -72.54962,
-        "generationtime_ms": 8.172035217285156,
+        "generationtime_ms": 6.464123725891113,
         "utc_offset_seconds": -18000,
         "timezone": "America/New_York",
         "timezone_abbreviation": "GMT-5",
@@ -2931,22 +2511,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -2966,30 +2543,6 @@
                 18.2,
                 4.1,
                 -4.6
-            ],
-            "sunrise": [
-                "2025-12-02T07:07",
-                "2025-12-03T07:08",
-                "2025-12-04T07:09",
-                "2025-12-05T07:10"
-            ],
-            "sunset": [
-                "2025-12-02T16:12",
-                "2025-12-03T16:12",
-                "2025-12-04T16:11",
-                "2025-12-05T16:11"
-            ],
-            "daylight_duration": [
-                32697.39,
-                32614.62,
-                32535.7,
-                32460.78
-            ],
-            "sunshine_duration": [
-                0.0,
-                23677.41,
-                4245.77,
-                28413.99
             ],
             "snowfall_sum": [
                 1.902,
@@ -3014,12 +2567,6 @@
                 6.2,
                 14.8,
                 5.2
-            ],
-            "wind_gusts_10m_max": [
-                13.2,
-                13.4,
-                35.1,
-                14.1
             ],
             "relative_humidity_2m_min": [
                 54,
@@ -3062,13 +2609,25 @@
                 24.1,
                 21.9,
                 6.7
+            ],
+            "wind_speed_10m_mean": [
+                3.8,
+                3.2,
+                8.7,
+                2.8
+            ],
+            "wind_speed_10m_min": [
+                1.6,
+                0.3,
+                5.0,
+                0.2
             ]
         }
     },
     "Concord": {
         "latitude": 43.198593,
         "longitude": -71.596985,
-        "generationtime_ms": 5.001306533813477,
+        "generationtime_ms": 2.4737119674682617,
         "utc_offset_seconds": -18000,
         "timezone": "America/New_York",
         "timezone_abbreviation": "GMT-5",
@@ -3077,22 +2636,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -3112,30 +2668,6 @@
                 16.7,
                 7.6,
                 0.5
-            ],
-            "sunrise": [
-                "2025-12-02T07:00",
-                "2025-12-03T07:01",
-                "2025-12-04T07:02",
-                "2025-12-05T07:03"
-            ],
-            "sunset": [
-                "2025-12-02T16:11",
-                "2025-12-03T16:11",
-                "2025-12-04T16:11",
-                "2025-12-05T16:11"
-            ],
-            "daylight_duration": [
-                33107.89,
-                33028.61,
-                32953.01,
-                32881.24
-            ],
-            "sunshine_duration": [
-                0.0,
-                29104.02,
-                13469.5,
-                28938.81
             ],
             "snowfall_sum": [
                 5.181,
@@ -3160,12 +2692,6 @@
                 11.4,
                 19.0,
                 9.1
-            ],
-            "wind_gusts_10m_max": [
-                19.0,
-                23.0,
-                40.5,
-                18.8
             ],
             "relative_humidity_2m_min": [
                 63,
@@ -3208,13 +2734,25 @@
                 26.7,
                 25.6,
                 8.9
+            ],
+            "wind_speed_10m_mean": [
+                4.0,
+                6.4,
+                9.3,
+                4.2
+            ],
+            "wind_speed_10m_min": [
+                0.5,
+                1.3,
+                3.7,
+                0.3
             ]
         }
     },
     "Augusta": {
         "latitude": 44.32337,
         "longitude": -69.77063,
-        "generationtime_ms": 66.67518615722656,
+        "generationtime_ms": 3.508329391479492,
         "utc_offset_seconds": -18000,
         "timezone": "America/New_York",
         "timezone_abbreviation": "GMT-5",
@@ -3223,22 +2761,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -3258,30 +2793,6 @@
                 20.7,
                 6.5,
                 0.4
-            ],
-            "sunrise": [
-                "2025-12-02T06:56",
-                "2025-12-03T06:57",
-                "2025-12-04T06:58",
-                "2025-12-05T06:59"
-            ],
-            "sunset": [
-                "2025-12-02T16:00",
-                "2025-12-03T16:00",
-                "2025-12-04T16:00",
-                "2025-12-05T16:00"
-            ],
-            "daylight_duration": [
-                32669.42,
-                32586.42,
-                32507.27,
-                32432.13
-            ],
-            "sunshine_duration": [
-                0.0,
-                27020.77,
-                15025.46,
-                28378.08
             ],
             "snowfall_sum": [
                 3.776,
@@ -3306,12 +2817,6 @@
                 13.9,
                 15.4,
                 7.9
-            ],
-            "wind_gusts_10m_max": [
-                25.3,
-                27.7,
-                31.3,
-                17.7
             ],
             "relative_humidity_2m_min": [
                 58,
@@ -3354,13 +2859,25 @@
                 26.7,
                 23.7,
                 9.0
+            ],
+            "wind_speed_10m_mean": [
+                6.1,
+                6.8,
+                8.4,
+                4.6
+            ],
+            "wind_speed_10m_min": [
+                1.8,
+                0.8,
+                3.4,
+                2.5
             ]
         }
     },
     "Pierre": {
         "latitude": 44.393673,
         "longitude": -100.336914,
-        "generationtime_ms": 116.27280712127686,
+        "generationtime_ms": 5.379676818847656,
         "utc_offset_seconds": -21600,
         "timezone": "America/Chicago",
         "timezone_abbreviation": "GMT-6",
@@ -3369,22 +2886,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -3404,30 +2918,6 @@
                 14.5,
                 14.0,
                 25.7
-            ],
-            "sunrise": [
-                "2025-12-02T07:59",
-                "2025-12-03T08:00",
-                "2025-12-04T08:01",
-                "2025-12-05T08:02"
-            ],
-            "sunset": [
-                "2025-12-02T17:02",
-                "2025-12-03T17:02",
-                "2025-12-04T17:02",
-                "2025-12-05T17:02"
-            ],
-            "daylight_duration": [
-                32637.83,
-                32554.75,
-                32475.54,
-                32400.34
-            ],
-            "sunshine_duration": [
-                4762.81,
-                7200.0,
-                28230.1,
-                9303.85
             ],
             "snowfall_sum": [
                 0.028,
@@ -3452,12 +2942,6 @@
                 12.4,
                 10.8,
                 14.6
-            ],
-            "wind_gusts_10m_max": [
-                20.4,
-                22.4,
-                19.0,
-                25.9
             ],
             "relative_humidity_2m_min": [
                 73,
@@ -3500,13 +2984,25 @@
                 21.4,
                 27.2,
                 34.5
+            ],
+            "wind_speed_10m_mean": [
+                7.3,
+                8.4,
+                7.9,
+                9.0
+            ],
+            "wind_speed_10m_min": [
+                2.4,
+                2.2,
+                3.8,
+                1.2
             ]
         }
     },
     "Bismarck": {
         "latitude": 46.78383,
         "longitude": -100.75928,
-        "generationtime_ms": 7.613897323608398,
+        "generationtime_ms": 7.008910179138184,
         "utc_offset_seconds": -21600,
         "timezone": "America/Chicago",
         "timezone_abbreviation": "GMT-6",
@@ -3515,22 +3011,19 @@
             "time": "iso8601",
             "temperature_2m_max": "\u00b0F",
             "temperature_2m_min": "\u00b0F",
-            "sunrise": "iso8601",
-            "sunset": "iso8601",
-            "daylight_duration": "s",
-            "sunshine_duration": "s",
             "snowfall_sum": "inch",
             "rain_sum": "inch",
             "precipitation_sum": "inch",
             "wind_speed_10m_max": "mp/h",
-            "wind_gusts_10m_max": "mp/h",
             "relative_humidity_2m_min": "%",
             "relative_humidity_2m_mean": "%",
             "relative_humidity_2m_max": "%",
             "apparent_temperature_max": "\u00b0F",
             "apparent_temperature_mean": "\u00b0F",
             "apparent_temperature_min": "\u00b0F",
-            "temperature_2m_mean": "\u00b0F"
+            "temperature_2m_mean": "\u00b0F",
+            "wind_speed_10m_mean": "mp/h",
+            "wind_speed_10m_min": "mp/h"
         },
         "daily": {
             "time": [
@@ -3550,30 +3043,6 @@
                 -5.8,
                 0.7,
                 16.7
-            ],
-            "sunrise": [
-                "2025-12-02T08:09",
-                "2025-12-03T08:10",
-                "2025-12-04T08:11",
-                "2025-12-05T08:12"
-            ],
-            "sunset": [
-                "2025-12-02T16:56",
-                "2025-12-03T16:55",
-                "2025-12-04T16:55",
-                "2025-12-05T16:55"
-            ],
-            "daylight_duration": [
-                31634.29,
-                31542.52,
-                31455.0,
-                31371.9
-            ],
-            "sunshine_duration": [
-                2379.89,
-                25411.32,
-                25200.0,
-                2325.35
             ],
             "snowfall_sum": [
                 0.0,
@@ -3598,12 +3067,6 @@
                 11.8,
                 10.7,
                 13.9
-            ],
-            "wind_gusts_10m_max": [
-                29.3,
-                21.5,
-                18.1,
-                26.4
             ],
             "relative_humidity_2m_min": [
                 80,
@@ -3646,6 +3109,18 @@
                 5.5,
                 20.1,
                 26.5
+            ],
+            "wind_speed_10m_mean": [
+                8.3,
+                5.7,
+                8.8,
+                7.3
+            ],
+            "wind_speed_10m_min": [
+                3.3,
+                0.4,
+                6.3,
+                3.1
             ]
         }
     }
