@@ -198,6 +198,35 @@ def plot_city_temperature_averages(cur):
 
     plt.tight_layout()
     plt.show()
+
+def state_energy_trend_line(cur, stateabbr):
+    cur.execute('''SELECT
+            Years.year,
+            EnergyData.energy_value
+        FROM EnergyData
+        JOIN States ON EnergyData.state_id = States.state_id
+        JOIN Years ON EnergyData.year_id = Years.year_id
+        WHERE States.state_name = ?
+        ORDER BY Years.year ASC
+        ''', (stateabbr,)
+    )
+
+    years = []
+    energy = []
+
+    for row in cur:
+        years.append(row[0])
+        energy.append(row[1])
+
+    fig, ax = plt.subplots()
+    ax.plot(years, energy)
+    ax.set_xlabel('Year')
+    ax.set_ylabel('Energy Consumption in Billion Btu')
+    ax.set_title(f'Energy Consumption Trend for {stateabbr}')
+
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.show()
      
 
 def main():
@@ -206,6 +235,7 @@ def main():
     pollution_danger_threshold(cur, "Annapolis")
     plot_state_consumption(cur)
     plot_city_temperature_averages(cur)
+    state_energy_trend_line(cur, "MD")
 
 
 main()
