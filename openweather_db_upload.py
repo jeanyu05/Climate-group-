@@ -92,7 +92,7 @@ def setup_date_tables(cur, conn, data):
 
 def setup_air_quality_data(cur, conn, data):
     cur.execute('''
-        CREATE TABLE IF NOT EXISTS AirQuality (
+        CREATE TABLE IF NOT EXISTS AirQualityData (
             air_quality_id INTEGER PRIMARY KEY AUTOINCREMENT,
             city_id INTEGER NOT NULL,
             date_id INTEGER NOT NULL,
@@ -125,7 +125,7 @@ def setup_air_quality_data(cur, conn, data):
         cur.execute('SELECT date_id FROM Dates WHERE date =?', (v['date'][0][:10],))
         date_id = cur.fetchone()[0]
 
-        cur.execute('''INSERT OR IGNORE INTO AirQuality
+        cur.execute('''INSERT OR IGNORE INTO AirQualityData
                     (city_id, date_id, aqi, co, no, no2, o3, so2, pm2_5, pm10, nh3)
                     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''',
                     (
