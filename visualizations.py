@@ -1,6 +1,7 @@
 import sqlite3
 import numpy as np
-import matplotlib
+from typing import Optional
+import pandas as pd
 import matplotlib.pyplot as plt
 
 def setup_climate_database(dbname):
@@ -109,14 +110,12 @@ def pollution_danger_threshold(cur, city):
 
 def main():
     cur, conn = setup_climate_database('climate_data.db')
-    #amd_trend_line(cur)
+    amd_trend_line(cur)
     pollution_danger_threshold(cur, "Lansing")
 
 
 main()
-from typing import Optional
-import pandas as pd
-import matplotlib.pyplot as plt
+
 
 DB = 'climate_data.db'
 
