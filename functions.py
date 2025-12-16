@@ -205,3 +205,6 @@ def insert_eia_json_to_db(json_path: str = 'EIA_data.json', db: str = DB, max_in
         conn.commit()
         conn.close()
         return inserted
+    
+    if __name__ == '__main__':
+        print("Run Functions.insert_airquality_from_json('Air_quality.json') and Functions.insert_openmeteo_json('Weather_Data.json') and Functions.insert_eia_json_to_db('EIA_data.json') as needed.")
