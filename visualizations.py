@@ -203,4 +203,31 @@ def plot_open_meteo_weather(db_path: str = DB, save_path: Optional[str] = None):
         f.write(f"Hottest City: {df.iloc[0]['city_name']} ({df.iloc[0]['avg_temp']:.2f} C)\n")
     
     print("Calculation file 'open_meteo_stats.txt' created successfully.")
+
+    # [Rubric: Visualization]
+    fig, ax = plt.subplots(figsize=(10, 6))
     
+    colors = plt.cm.coolwarm(df['avg_temp'] / df['avg_temp'].max())
+    bars = ax.bar(df['city_name'], df['avg_temp'], color=colors, edgecolor='black', alpha=0.8)
+
+    ax.set_ylabel('Average Temperature (°C)', fontsize=12)
+    ax.set_title('Average Temperature by City (OpenMeteo Data)', fontsize=14, fontweight='bold')
+    plt.xticks(rotation=45)
+    plt.grid(axis='y', linestyle='--', alpha=0.5)
+
+    for bar in bars:
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2., height,
+                f'{height:.1f}',
+                ha='center', va='bottom')
+
+    plt.tight_layout()
+
+    if save_path:
+        fig.savefig(save_path, dpi=150)
+        print(f"Plot saved to {save_path}")
+    else:
+        plt.show()
+
+if __name__ == '__main__':
+    plot_open_meteo_weather()    
