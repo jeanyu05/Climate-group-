@@ -176,6 +176,7 @@ def plot_open_meteo_weather(db_path: str = DB, save_path: Optional[str] = None):
     """
     conn = sqlite3.connect(db_path)
     
+    # [Rubric: JOIN used]
     query = """
     SELECT 
         Cities.city_name, 
