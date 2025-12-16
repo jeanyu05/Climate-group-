@@ -191,4 +191,17 @@ def plot_open_meteo_weather(db_path: str = DB, save_path: Optional[str] = None):
     df = pd.read_sql_query(query, conn)
     conn.close()
 
+    if df.empty:
+        print("Warning: No Open Meteo data found. Make sure you ran the insert function!")
+        return
+
+    # [Rubric: Write calculated data to file]
+    with open('open_meteo_stats.txt', 'w') as f:
+        f.write("=== Open Meteo Weather Statistics (Calculated) ===\n")
+        f.write(f"Generated on: {pd.Timestamp.now()}\n\n")
+        f.write(df.to_string(index=False))
+        f.write("\n\nSummary:\n")
+        f.write(f"Hottest City: {df.iloc[0]['city_name']} ({df.iloc[0]['avg_temp']:.2f} C)\n")
+    
+    print("Calculation file 'open_meteo_stats.txt' created successfully.")
     
