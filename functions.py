@@ -134,3 +134,74 @@ def insert_airquality_from_json(filename: str, db: str = DB, max_inserts: int = 
     conn.commit()
     conn.close()
     return inserted
+
+def insert_openmeteo_json(filename: str, db: str = DB, max_inserts: int = 25) -> int:
+    with open(filename, 'r') as f:
+        raw = json.load(f)
+    cur, conn = get_conn(db)
+    init_tables(cur, conn)
+    inserted = 0
+    for city, payload in raw.items():
+        if inserted >= max_inserts:
+            break
+        daily = payload.get('daily', {})
+        times = daily.get('time', [])
+        temps = daily.get('temperature_2m_mean', [])
+        rhs = daily.get('relative_humidity_2m_mean', [])
+        winds = daily.get('wind_speed_10m_mean', [])
+        for i, date in enumerate(times):
+            if inserted >= max_inserts:
+                break
+            temp = temps[i] if i < len(temps) else None
+            rh = rhs[i] if i < len(rhs) else None
+            wind = winds[i] if i < len(winds) else None
+            cur.execute("INSERT OR IGNORE INTO Cities (city_name) VALUES (?)", (city,))
+            cur.execute("SELECT city_id FROM Cities WHERE city_name = ?", (city,))
+            city_id = cur.fetchone()[0]
+            cur.execute("INSERT OR IGNORE INTO Dates (date) VALUES (?)", (date,))
+            cur.execute("SELECT date_id FROM Dates WHERE date = ?", (date,))
+            date_id = cur.fetchone()[0]
+            cur.execute("""
+                INSERT OR IGNORE INTO Weather (city_id, date_id, temp_mean, rh_mean, wind_mean)
+                VALUES (?, ?, ?, ?, ?)
+            """, (city_id, date_id, temp, rh, wind))
+            if cur.rowcount:
+                inserted += 1
+    conn.commit()
+    conn.close()
+    return inserted
+
+def insert_eia_json_to_db(json_path: str = 'EIA_data.json', db: str = DB, max_inserts:int = 25) -> int:
+    conn = sqlite3.connect(db)
+    cur = conn.cursor()
+    cur.execute('CREATE TABLE IF NOT EXISTS eia_consumption (id INTEGER PRIMARY KEY AUTOINCREMENT, state TEXT NOT NULL, year INTEGER NOT NULL, series_id TEXT, value REAL, units TEXT, UNIQUE(state, year, series_id))')
+    conn.commit()
+    inserted = 0
+    with open(json_path, 'r') as f:
+        raw = json.load(f)
+    for state, recs in raw.items():
+        if inserted >= max_inserts:
+            break
+        if not isinstance(recs, list):
+            continue
+        for item in recs:
+            if inserted >= max_inserts:
+                break
+            year_raw = item.get('period') or item.get('year')
+            try:
+                year = int(str(year_raw)[:4])
+            except Exception:
+                continue
+            series = item.get('seriesId') or item.get('series_id') or item.get('series')
+            try:
+                value = float(item.get('value')) if item.get('value') is not None else None
+            except Exception:
+                value = None
+            units = item.get('units') or item.get('unit')
+            cur.execute("""INSERT OR IGNORE INTO eia_consumption (state, year, series_id, value, units) VALUES (?, ?, ?, ?, ?)""",
+                        (state, year, series, value, units))
+            if cur.rowcount:
+                inserted += 1
+        conn.commit()
+        conn.close()
+        return inserted
