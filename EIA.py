@@ -1,6 +1,11 @@
 import requests
 import json
-
+import sqlite3
+import time
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from typing import List, Optional
 Stateid_list = ['MI','OH','IN','IL','WI','MN','IA','MO','KY','TN',
                 'PA','WV','VA','MD','DE','NY','NJ','CT','MA','RI',
                 'VT','NH','ME','SD','ND']
@@ -46,6 +51,7 @@ def eia_city_data(stateidlst):
         json.dump(all_states, EIA_file, indent=4)
        
 eia_city_data(Stateid_list)
+
 
 
 
