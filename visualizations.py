@@ -1,7 +1,5 @@
 import sqlite3
 import numpy as np
-from typing import Optional
-import pandas as pd
 import matplotlib.pyplot as plt
 
 def setup_climate_database(dbname):
@@ -108,86 +106,107 @@ def pollution_danger_threshold(cur, city):
 
     plt.show()
 
+def plot_state_consumption(cur):
+    cur.execute('''
+        SELECT
+            States.state_name,
+            EnergyData.energy_value
+        FROM EnergyData
+        JOIN States ON EnergyData.state_id = States.state_id
+    ''')
+
+    stated = {}
+
+    for row in cur:
+        state = row[0]
+        value = float(row[1])
+
+        if state not in stated:
+            stated[state] = []
+
+        stated[state].append(value)
+
+    states = []
+    avg_energy = []
+
+    for state, values in stated.items():
+        states.append(state)
+        avg_energy.append(lstavg(values))
+
+    fig, ax = plt.subplots()
+    ax.bar(states, avg_energy)
+    ax.set_xlabel('State')
+    ax.set_ylabel('Average Energy Consumption in Billion Btu')
+    ax.set_title('Average Energy Consumption per State')
+    ax.tick_params(axis='x', rotation=90)
+
+    plt.tight_layout()
+    plt.show()
+
+def plot_city_temperature_averages(cur):
+    cur.execute('''
+        SELECT
+            Cities.city_name,
+            WeatherData.mean_temp,
+            WeatherData.max_temp,
+            WeatherData.min_temp
+        FROM WeatherData
+        JOIN Cities ON WeatherData.city_id = Cities.city_id
+    ''')
+
+    cityd = {}
+
+    for row in cur:
+        city = row[0]
+
+        if city not in cityd:
+            cityd[city] = {
+                'mean': [],
+                'max': [],
+                'min': []
+            }
+
+        cityd[city]['mean'].append(row[1])
+        cityd[city]['max'].append(row[2])
+        cityd[city]['min'].append(row[3])
+
+    cities = []
+    mean_avgs = []
+    max_avgs = []
+    min_avgs = []
+
+    for city, temps in cityd.items():
+        cities.append(city)
+        mean_avgs.append(np.average(temps['mean']))
+        max_avgs.append(np.average(temps['max']))
+        min_avgs.append(np.average(temps['min']))
+
+    x = np.arange(len(cities))
+    width = 0.25
+
+    fig, ax = plt.subplots()
+    ax.bar(x - width, mean_avgs, width, label='Mean Temp')
+    ax.bar(x, max_avgs, width, label='Max Temp')
+    ax.bar(x + width, min_avgs, width, label='Min Temp')
+
+    ax.set_xlabel('City')
+    ax.set_ylabel('Farenheit')
+    ax.set_title('Average Daily Temperatures by City')
+    ax.set_xticks(x)
+    ax.set_xticklabels(cities, rotation=45)
+    ax.legend()
+
+    plt.tight_layout()
+    plt.show()
+     
+
 def main():
     cur, conn = setup_climate_database('climate_data.db')
     amd_trend_line(cur)
-    pollution_danger_threshold(cur, "Lansing")
+    pollution_danger_threshold(cur, "Annapolis")
+    plot_state_consumption(cur)
+    plot_city_temperature_averages(cur)
 
 
 main()
 
-
-DB = 'climate_data.db'
-
-def plot_eia_avg_consumption(db_path: str = DB,
-                             start_year: int = 2013,
-                             end_year: int = 2023,
-                             top_n: int = 10,
-                             save_path: Optional[str] = None) -> Optional[str]:
-    """
-    Load EIA data from the SQLite DB, compute average consumption per state
-    between start_year and end_year, and plot a bar chart of the top_n states.
-    If save_path is provided the plot is saved and the path returned, otherwise the plot is shown.
-    """
-    conn = sqlite3.connect(db_path)
-    df = pd.read_sql_query("SELECT state, year, value FROM eia_consumption", conn)
-    conn.close()
-
-    if df.empty:
-        raise ValueError("No EIA data found in database.")
-
-    mask = (df['year'] >= start_year) & (df['year'] <= end_year)
-    sub = df[mask].copy()
-    if sub.empty:
-        raise ValueError(f"No EIA rows in range {start_year}-{end_year}.")
-
-    agg = sub.groupby('state')['value'].mean().sort_values(ascending=False).head(top_n)
-
-    fig, ax = plt.subplots(figsize=(10, 6))
-    bars = ax.bar(agg.index, agg.values, color='C2')
-    ax.set_ylabel('Average Consumption')
-    ax.set_title(f'Average Energy Consumption per State ({start_year}-{end_year})')
-    plt.xticks(rotation=45, ha='right')
-    for b in bars[:5]:
-        b.set_edgecolor('black')
-        b.set_linewidth(1.0)
-    plt.tight_layout()
-
-    if save_path:
-        fig.savefig(save_path, dpi=150)
-        plt.close(fig)
-        return save_path
-    else:
-        plt.show()
-        return None
-
-if __name__ == '__main__':
-    plot_eia_avg_consumption()
-
-
-def plot_open_meteo_weather(db_path: str = DB, save_path: Optional[str] = None):
-    """
-    1. Connects to DB.
-    2. JOINs Weather and Cities tables (Rubric Requirement!).
-    3. Calculates average temperature and humidity per city.
-    4. Writes calculation results to 'open_meteo_stats.txt' (Rubric Requirement!).
-    5. Visualizes the data.
-    """
-    conn = sqlite3.connect(db_path)
-    
-    # [Rubric: JOIN used]
-    query = """
-    SELECT 
-        Cities.city_name, 
-        AVG(Weather.temp_mean) as avg_temp,
-        AVG(Weather.rh_mean) as avg_humidity
-    FROM Weather
-    JOIN Cities ON Weather.city_id = Cities.city_id
-    GROUP BY Cities.city_name
-    ORDER BY avg_temp DESC
-    """
-    
-    df = pd.read_sql_query(query, conn)
-    conn.close()
-
-    

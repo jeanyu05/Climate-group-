@@ -1,5 +1,6 @@
 import json
 import datetime
+import pprint as pp
 import sqlite3
 import numpy as np
 
@@ -65,12 +66,64 @@ def amd_marketstack_movingavg(cur):
 
     return round(np.average(np.array(moving_avg)), 2)
         
+def eia_state_peak_consumption(cur, stateabbr):
+    cur.execute('''SELECT
+            States.state_name,
+            Years.year,
+            EnergyData.energy_value
+        FROM EnergyData
+        JOIN States ON EnergyData.state_id = States.state_id
+        JOIN Years ON EnergyData.year_id = Years.year_id
+        WHERE States.state_name = ?
+        ''', (stateabbr,)
+    )
 
+    highest_year = ''
+    highest_energy = 0
+    for row in cur:
+        year = row[1]
+        energy = row[2]
+
+        if energy > highest_energy:
+            highest_energy = energy
+            highest_year = year
+
+    return (stateabbr, highest_year, highest_energy)
+
+def open_meteo_city_mean_temp_avg(cur, city):
+    cur.execute('''SELECT
+            WeatherData.mean_temp
+        FROM WeatherData
+        JOIN Cities ON WeatherData.city_id = Cities.city_id
+        WHERE Cities.city_name = ?
+        ''', (city,)
+    )
+
+    temps = []
+    for row in cur:
+        temps.append(row[0])
+
+    return round(np.average(np.array(temps)), 2)
 
 def main():
     cur, conn = setup_climate_database('climate_data.db')
-    openweather_city_harmful_pollutant(cur, 'Annapolis')
-    print(amd_marketstack_movingavg(cur))
+    harmfuldata = openweather_city_harmful_pollutant(cur, 'Annapolis')
+    movingavgdata = amd_marketstack_movingavg(cur)
+    statenergy = eia_state_peak_consumption(cur, 'MD')
+    meantmpavg = open_meteo_city_mean_temp_avg(cur, 'Annapolis')
+
+    with open("function_output.txt", "w") as ofile:
+            ofile.write("Most harmful pollutant in: \n\n")
+            pp.pprint(harmfuldata, stream=ofile,)
+
+            ofile.write("\n\nAMD Stock 100 day moving average\n\n")
+            pp.pprint(movingavgdata, stream=ofile,)
+
+            ofile.write("\n\nHighest energy consumption for the past ten years in: \n\n")
+            pp.pprint(statenergy, stream=ofile,)
+
+            ofile.write("\n\nState Most Sold Products\n\n")
+            pp.pprint(meantmpavg, stream=ofile,)
 
 
 main()
