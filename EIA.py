@@ -127,6 +127,43 @@ def compute_eia_state_consumption(eia_df: pd.DataFrame, start_year: int = 2013, 
     res = pd.DataFrame(results).set_index('state').sort_values('avg_consumption', ascending=False)
     return res
 
+def plot_eia_avg_consumption(db_path: str = DB_PATH,
+                             start_year: int = 2013,
+                             end_year: int = 2023,
+                             top_n: int = 10,
+                             save_path: Optional[str] = None):
+    """
+    Load EIA data from DB, compute average consumption per state for the year range,
+    and plot a Matplotlib bar chart of the top_n states. If save_path is provided,
+    save the figure and return the path; otherwise show the plot.
+    """
+    df = load_eia_df(db_path)
+    if df.empty:
+        raise ValueError("No EIA data found in database.")
+    mask = (df['year'] >= start_year) & (df['year'] <= end_year)
+    sub = df[mask].copy()
+    if sub.empty:
+        raise ValueError(f'No EIA rows in range {start_year}-{end_year}.')
+    agg = sub.groupby('state')['value'].mean().sort_values(ascending=False).head(top_n)
+
+    fig, ax = plt.subplots(figsize=(10,6))
+    bars = ax.bar(agg.index, agg.values, color='C2')
+    ax.set_ylabel('Average Consumption')
+    ax.set_title(f'Average Energy Consumption per State ({start_year}-{end_year})')
+    plt.xticks(rotation=45, ha='right')
+    for b in bars[:5]:
+        b.set_edgecolor('black'); b.set_linewidth(1.0)
+    plt.tight_layout()
+
+    if save_path:
+        fig.savefig(save_path, dpi=150)
+        plt.close(fig)
+        return save_path
+    else:
+        plt.show()
+        return None
+
+
 def plot_avg_energy_bar(eia_summary_df: pd.DataFrame, top_n: int = 15, figsize=(10,6), title: Optional[str] = None):
     if title is None:
         title = f'Average Energy Consumption per State ({top_n} highest, 2013-2023)'
@@ -188,3 +225,4 @@ if __name__ == '__main__':
         plot_avg_energy_bar(summary, top_n=12)
         plot_top5_states(summary)
         plot_state_trend(summary.index[0], eia_df)
+
