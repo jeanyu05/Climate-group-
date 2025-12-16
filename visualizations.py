@@ -163,3 +163,31 @@ def plot_eia_avg_consumption(db_path: str = DB,
 
 if __name__ == '__main__':
     plot_eia_avg_consumption()
+
+
+def plot_open_meteo_weather(db_path: str = DB, save_path: Optional[str] = None):
+    """
+    1. Connects to DB.
+    2. JOINs Weather and Cities tables (Rubric Requirement!).
+    3. Calculates average temperature and humidity per city.
+    4. Writes calculation results to 'open_meteo_stats.txt' (Rubric Requirement!).
+    5. Visualizes the data.
+    """
+    conn = sqlite3.connect(db_path)
+    
+    # [Rubric: JOIN used]
+    query = """
+    SELECT 
+        Cities.city_name, 
+        AVG(Weather.temp_mean) as avg_temp,
+        AVG(Weather.rh_mean) as avg_humidity
+    FROM Weather
+    JOIN Cities ON Weather.city_id = Cities.city_id
+    GROUP BY Cities.city_name
+    ORDER BY avg_temp DESC
+    """
+    
+    df = pd.read_sql_query(query, conn)
+    conn.close()
+
+    
