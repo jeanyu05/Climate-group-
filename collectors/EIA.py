@@ -5,9 +5,9 @@ Stateid_list = ['MI','OH','IN','IL','WI','MN','IA','MO','KY','TN',
                 'PA','WV','VA','MD','DE','NY','NJ','CT','MA','RI',
                 'VT','NH','ME','SD','ND']
 
-def eia_city_data(stateidlst):
+def eia_city_data(stateidlst, Key):
+
     all_states = {}
-    eia_APIKey = 'g2PtAcXGf49jlaFwNgQDTRvAtSteZeuVGTF5L3y2'
 
     for id in stateidlst:
     
@@ -33,7 +33,7 @@ def eia_city_data(stateidlst):
         }
         
         params = {
-            "api_key": eia_APIKey
+            "api_key": Key
         }
         
         response = requests.post(url, params=params, json=payload)
@@ -44,6 +44,4 @@ def eia_city_data(stateidlst):
 
     with open('EIA_data.json', 'w') as EIA_file:
         json.dump(all_states, EIA_file, indent=4)
-       
-eia_city_data(Stateid_list)
 

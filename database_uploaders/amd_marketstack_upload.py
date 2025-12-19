@@ -1,17 +1,10 @@
 import json
-import sqlite3
 
 def extract_amd_marketstack(filename):
     with open(filename, 'r') as ofile:
         data = json.load(ofile)
 
     return data
-
-def setup_climate_database(dbname):
-    conn = sqlite3.connect(dbname)
-    cur = conn.cursor()
-
-    return cur, conn
 
 def setup_amd_market_data(cur, conn, data):
     cur.execute('''
@@ -51,13 +44,6 @@ def setup_amd_market_data(cur, conn, data):
             count += 1
 
     conn.commit()
-
-def main():
-    data = extract_amd_marketstack('amd_marketstack.json')
-    cur, conn = setup_climate_database("climate_data.db")
-    setup_amd_market_data(cur, conn, data)
-
-main()
 
     
 

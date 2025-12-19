@@ -1,16 +1,10 @@
 import json
-import sqlite3
 
 def extract_eia_data(filename):
     with open(filename, 'r') as ofile:
         data = json.load(ofile)
 
     return data
-
-def setup_climate_database(dbname):
-    conn = sqlite3.connect(dbname)
-    cur = conn.cursor()
-    return cur, conn
 
 def setup_state_table(cur, conn, data):
     cur.execute('''
@@ -83,13 +77,3 @@ def setup_state_energy_data(cur, conn, data):
                 count += 1
 
     conn.commit()
-
-
-def main():
-    data = extract_eia_data("EIA_data.json")
-    cur, conn = setup_climate_database("climate_data.db")
-    setup_state_table(cur, conn, data)
-    setup_year_table(cur, conn, data)
-    setup_state_energy_data(cur, conn, data)
-
-main()

@@ -1,12 +1,11 @@
 import requests
 import json
 
-def amd_stock_data():
+def amd_stock_data(Key):
 
-    API_KEY = '1f3b83b514e53113dee475ee803802c5'
     url = 'https://api.marketstack.com/v1/eod'
     params = {
-            "access_key": API_KEY,
+            "access_key": Key,
             "symbols": 'AMD',
             "limit": 100,
     }
@@ -17,5 +16,3 @@ def amd_stock_data():
 
         with open('amd_marketstack.json', 'w') as marketfile:
             json.dump(data, marketfile, indent=4)
-
-amd_stock_data()

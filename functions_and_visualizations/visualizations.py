@@ -1,11 +1,5 @@
-import sqlite3
 import numpy as np
 import matplotlib.pyplot as plt
-
-def setup_climate_database(dbname):
-    conn = sqlite3.connect(dbname)
-    cur = conn.cursor()
-    return cur, conn
 
 def lstavg(lst):
     return (sum(lst)/len(lst))
@@ -227,16 +221,4 @@ def state_energy_trend_line(cur, stateabbr):
     plt.xticks(rotation=45)
     plt.tight_layout()
     plt.show()
-     
-
-def main():
-    cur, conn = setup_climate_database('climate_data.db')
-    amd_trend_line(cur)
-    pollution_danger_threshold(cur, "Annapolis")
-    plot_state_consumption(cur)
-    plot_city_temperature_averages(cur)
-    state_energy_trend_line(cur, "MD")
-
-
-main()
 

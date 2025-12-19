@@ -1,6 +1,5 @@
 import json
 import datetime
-import sqlite3
 import numpy as np
     
 def update_air_quality_date(filename):
@@ -53,11 +52,6 @@ def combine_air_quality_data(data):
             new_aq[f"{k} {date}"] = tempcity
 
     return new_aq
-
-def setup_climate_database(dbname):
-    conn = sqlite3.connect(dbname)
-    cur = conn.cursor()
-    return cur, conn
 
 def setup_city_table(cur, conn, data):
     cur.execute('''
@@ -147,13 +141,3 @@ def setup_air_quality_data(cur, conn, data):
             count += 1
 
     conn.commit()
-
-def main():
-    data = update_air_quality_date("Air_quality.json")
-    agg_aq_data = combine_air_quality_data(data)
-    cur, conn = setup_climate_database('climate_data.db')
-    setup_city_table(cur, conn, agg_aq_data)
-    setup_date_tables(cur,conn, agg_aq_data)
-    setup_air_quality_data(cur, conn, agg_aq_data)
-
-main()

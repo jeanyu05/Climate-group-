@@ -1,5 +1,6 @@
-import json
 import requests
+import json
+
 
 OW_LatLong_Dict = {
     'Lansing': (42.7325, -84.5555), 'Columbus': (39.9612, -82.9988),
@@ -18,25 +19,32 @@ OW_LatLong_Dict = {
 }
 
 
-def openweather_city_data(latlongtup):
-    all_cities = {}
-    owAPIKey = 'bac9b356ed172f8814a3fcea57ab3e85'
+def openmeteo_city_data(citydict):
 
-    for k, v in latlongtup.items():
-        
-        url = f"http://api.openweathermap.org/data/2.5/air_pollution/history"
-        params = {'lat': v[0],
-                  'lon': v[1],
-                  'start': 1764633600,
-                  'end': 1764979200,
-                  'appid': owAPIKey}
-        
+    all_cities = {}
+
+    for k,v in citydict.items():
+        url = "https://archive-api.open-meteo.com/v1/archive"
+        params = {
+	            "latitude": v[0],
+	            "longitude": v[1],
+	            "start_date": "2025-12-02",
+	            "end_date": "2025-12-05",
+	            "daily": ["temperature_2m_max", "temperature_2m_min", "snowfall_sum", 
+                       "rain_sum", "precipitation_sum", "wind_speed_10m_max", 
+                       "relative_humidity_2m_min", "relative_humidity_2m_mean", "relative_humidity_2m_max", 
+                       "apparent_temperature_max", "apparent_temperature_mean", "apparent_temperature_min", 
+                       "temperature_2m_mean", "wind_speed_10m_mean", "wind_speed_10m_min"],
+	            "timezone": "auto",
+	            "temperature_unit": "fahrenheit",
+	            "wind_speed_unit": "mph",
+	            "precipitation_unit": "inch",
+}
+    
         response = requests.get(url, params=params)
         if response.status_code == 200:
             data = response.json()
             all_cities[k] =  data
 
-    with open('Air_quality.json', 'w') as airpolfile:
-        json.dump(all_cities, airpolfile, indent=4)
-
-openweather_city_data(OW_LatLong_Dict)
+    with open('Weather_Data.json', 'w') as weatherfile:
+        json.dump(all_cities, weatherfile, indent=4)

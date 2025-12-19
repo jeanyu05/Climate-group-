@@ -1,15 +1,5 @@
-import json
-import datetime
-import pprint as pp
-import sqlite3
 import numpy as np
-
-
-def setup_climate_database(dbname):
-    conn = sqlite3.connect(dbname)
-    cur = conn.cursor()
-    return cur, conn
-
+import pprint as pp
 
 def openweather_city_harmful_pollutant(cur, city):
     cur.execute('''SELECT 
@@ -105,28 +95,20 @@ def open_meteo_city_mean_temp_avg(cur, city):
 
     return round(np.average(np.array(temps)), 2)
 
-def main():
-    cur, conn = setup_climate_database('climate_data.db')
-    harmfuldata = openweather_city_harmful_pollutant(cur, 'Annapolis')
-    movingavgdata = amd_marketstack_movingavg(cur)
-    statenergy = eia_state_peak_consumption(cur, 'MD')
-    meantmpavg = open_meteo_city_mean_temp_avg(cur, 'Annapolis')
+def functionoutput(pollutant, moving, statenrg, mean_temp_avg):
 
     with open("function_output.txt", "w") as ofile:
             ofile.write("Most harmful pollutant in: \n\n")
-            pp.pprint(harmfuldata, stream=ofile,)
+            pp.pprint(pollutant, stream=ofile,)
 
             ofile.write("\n\nAMD Stock 100 day moving average\n\n")
-            pp.pprint(movingavgdata, stream=ofile,)
+            pp.pprint(moving, stream=ofile,)
 
             ofile.write("\n\nHighest energy consumption for the past ten years in: \n\n")
-            pp.pprint(statenergy, stream=ofile,)
+            pp.pprint(statenrg, stream=ofile,)
 
-            ofile.write("\n\nState Most Sold Products\n\n")
-            pp.pprint(meantmpavg, stream=ofile,)
-
-
-main()
+            ofile.write("\n\nState mean temperature\n\n")
+            pp.pprint(mean_temp_avg, stream=ofile,)
 
                         
                 

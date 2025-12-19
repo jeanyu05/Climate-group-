@@ -1,5 +1,4 @@
 import json
-import sqlite3
 
 def separate_weather_data(filename):
     with open(filename, 'r') as ofile:
@@ -19,11 +18,6 @@ def separate_weather_data(filename):
             new_weath[f'{k} {i}'] = temp_dict
     
     return new_weath
-
-def setup_climate_database(dbname):
-    conn = sqlite3.connect(dbname)
-    cur = conn.cursor()
-    return cur, conn
 
 def setup_city_table(cur, conn, data):
     cur.execute('''
@@ -56,9 +50,7 @@ def setup_date_tables(cur, conn, data):
         )
 
     conn.commit()
-
-
-    
+ 
 
 def setup_open_meteo_data(cur, conn, data):
     cur.execute('''
@@ -149,14 +141,6 @@ def setup_open_meteo_data(cur, conn, data):
 
     conn.commit()
 
-def main():
-    data = separate_weather_data('Weather_Data.json')
-    cur, conn = setup_climate_database('climate_data.db')
-    setup_city_table(cur, conn, data)
-    setup_date_tables(cur, conn, data)
-    setup_open_meteo_data(cur, conn, data)
-
-main()
 
         
 
